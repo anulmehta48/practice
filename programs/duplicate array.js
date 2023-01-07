@@ -68,18 +68,21 @@
 // third we have each no is appear 1 times or 2 times 
 // fouth we have all no. are postive numbers 
 //here is Time is O(n)
-let nums=[1,2,5,1,5,3,6]
-function duplicate(nums) {
-    let result=[]
-    for(let i=0;i<nums.length;i++){
-        let x=Math.abs(nums[i])
-        let index=x-1
-        if(nums[index]<0){
-            result.push(x)
-        }else{
-            nums[index]=nums[index]*-1
-        }
-    }
-    return result;
-};
-console.log(duplicate(nums))
+
+
+
+// let nums=[1,2,5,1,5,3,6]
+// function duplicate(nums) {
+//     let result=[]
+//     for(let i=0;i<nums.length;i++){
+//         let x=Math.abs(nums[i])
+//         let index=x-1
+//         if(nums[index]<0){
+//             result.push(x)
+//         }else{
+//             nums[index]=nums[index]*-1
+//         }
+//     }
+//     return result;
+// };
+// console.log(duplicate(nums))

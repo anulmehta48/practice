@@ -82,19 +82,22 @@
 //say number problem 
 // let arr=["zero","one","two","three","four","five","six","seven","eight","nine","ten"]
 // let n=412
-function sayDigit(n,arr){
-    //base case
-    if(n == 0)
-        return;
+// function sayDigit(n,arr){
+//     //base case
+//     if(n == 0) return;
 
-    //processing
-    let digit= n % 10
-    // n=n / 10
+//     //processing
+//     let digit= n % 10
+//     // n=n / 10
 
-    //recursive
-    // console.log(arr[digit]+" ")
-    sayDigit(n,arr)
-    console.log(arr[digit]+" ")
-}
+//     //recursive
+//     // console.log(arr[digit]+" ")
+//     sayDigit(n,arr)
+//     console.log(arr[digit]+" ")
+// }
 
-console.log(sayDigit(12,["zero","one","two","three","four"]))
+// console.log(sayDigit(12,["zero","one","two","three","four"]))
+
+
+
+

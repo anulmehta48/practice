@@ -74,14 +74,33 @@
 // console.log(myArray)
 
 
+// let myArray=["kamal","hement","rahul","anul","hhh"]
+// let a=myArray.splice(2) //now this line first two elements(0,1) be stay here in original array and remaining element are deleted  from array  and add in another array 
+// console.log(a)
+// console.log(myArray) // now this is print deleted array elements
+
+// let myArray=["kamal","hement","rahul","anul","hhh"]
+// let a=myArray.splice(2,1) //now this line go in index 2 and delete one element form array and add in another array 
+// console.log(a)
+// console.log(myArray) // now this is print reamining rest array elements
+
+// let myArray=["kamal","hement","rahul","anul","hhh"]
+// let a=myArray.splice(2,1,"new","nnn") // this line go 2nd index and delete only one element and add new element of that deleted palce
+// console.log(a)
+// console.log(myArray) //this line print all updated array elements
+
+
 
 //9. slice() :- slice is used for takes the elements form the array and create the new array with tooked elemets but not removed from oringinal array
 //              and it take 1 or 2 argument :like-(1,5) starting from 1 argument but not including last 5 argument it take values from(1,2,3,4)
 // example:-
-let myArray=["kamal","hement","rahul","anul","hhh"]
-// let a=myArray.slice(1,4) // if i used the line it start from index 1 to index 3 elements gives you it is not include last or second parameter
-let a=myArray.slice(3)  //if you used this line then it start from 3 and gives you all rest element of array
-console.log(a)
+// let myArray=["kamal","hement","rahul","anul","hhh"]
+// let a=myArray.slice(1)// this is detetd first 1 element and give all rest elements another new array
+// let b=myArray.slice(1,4) // if i used the line it start from index 1 to index 3 elements gives you it is not include last or second parameter
+// let c=myArray.slice(3)  //if you used this line then it start from 3 and gives you all rest element of array
+// console.log(a)
+// console.log(b)
+// console.log(c)
 // console.log(myArray)
 
 
@@ -112,4 +131,21 @@ console.log(a)
 // let k=points.reverse()
 // console.log(k)
 
+
+//var let const
+
+// console.log(x)
+
+// var x;
+
+
+// forvar()
+
+
+var forvar=()=>{
+    var x=20
+    var x=50
+    console.log(x)
+}
+console.log(window.forvar)
 
