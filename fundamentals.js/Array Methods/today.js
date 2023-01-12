@@ -3,9 +3,9 @@
 let arr=[2,5,4,1,4,5,9]
 let start=0
 let end=arr.length-1
+
 function mergesort(arr,start,end){
     let mid=Math.floor(start+(end-start)/2)
-
     if(start>=end) return;
 
     mergesort(arr,start,mid)
@@ -55,3 +55,6 @@ function merge(arr,start,mid,end){
 }
 
 console.log(mergesort(arr,start,end))
+
+
+
