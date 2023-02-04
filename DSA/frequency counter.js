@@ -83,14 +83,14 @@
 //but in this aporach in TC is O(n^2)
 //
 let arr1=[2,3,4,6]
-let arr2=[4,9,16,37]
+let arr2=[36,9,16,4]
 function same(arr1,arr2){
     if(arr1.length !== arr2.length){
         return false
     }
     for(let i=0;i<arr1.length;i++){
-        console.log(i)//this is for for loop iteration one by one 
-        let correctIndex=arr2.indexOf(arr1[i]**2) //this line check where is square element index is present 
+        // console.log(i)//this is for for loop iteration one by one 
+        let correctIndex=arr2.indexOf(arr1[i]**2) //this line check where is square element index is present in arr2 of arr1 element
         console.log(correctIndex)//this is for index of square element
         if(correctIndex ==-1){
             return false

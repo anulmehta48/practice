@@ -1,42 +1,42 @@
 //Q1.check the square is present or not in the sccond array
-// let arr1=[2,4,6,8]
-// let arr2=[4,16,36,64]
+let arr1=[2,4,6,8]
+let arr2=[4,16,36,64]
 
-// function checksquare(arr1,arr2){
-//   if(arr1.length !=arr2.length){
-//     return false;
-//   }
-//   let frq1={}
-//   let frq2={}
+function checksquare(arr1,arr2){
+  if(arr1.length !=arr2.length){
+    return false;
+  }
+  let frq1={}
+  let frq2={}
 
-//   for(let val of arr1){
-//     if(frq1[val]){
-//       frq1[val]++
-//     }else{
-//       frq1[val]=1
-//     }
-//   }
-//   for(let val of arr2){
-//     if(frq2[val]){
-//       frq2[val]++
-//     }else{
-//       frq2[val]=1
-//     }
-//   }
+  for(let val of arr1){
+    if(frq1[val]){
+      frq1[val]++
+    }else{
+      frq1[val]=1
+    }
+  }
+  for(let val of arr2){
+    if(frq2[val]){
+      frq2[val]++
+    }else{
+      frq2[val]=1
+    }
+  }
 
-//   for(let key in frq1){
-//     if(frq1[key] != frq2[key**2]){
-//         return false;
-//     }
+  for(let key in frq1){
+    if(frq1[key] != frq2[key**2]){
+        return false;
+    }
 
-//     if(frq2[key**2]!=frq1[key]){
-//         return false
-//     }
-//   }
-//   return true;
-// }
-// console.log(checksquare(arr1,arr2))
-//here is Tc is O(n)
+    if(frq2[key**2]!=frq1[key]){
+        return false
+    }
+  }
+  return true;
+}
+console.log(checksquare(arr1,arr2))
+// here is Tc is O(n)
 
 
 

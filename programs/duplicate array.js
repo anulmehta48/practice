@@ -16,23 +16,23 @@
 
 
 
-//find the duplicate elememt and print them 
-//using for loop ;
-//here is TC is O(nlogn)
-// let nums=[1,2,5,1,5,3,6]
-// function duplicate(nums) {
-//     nums.sort()
-//     // console.log(nums)
-//     let result=[]
-//     for(let i=0;i<nums.length;i++){
-//        if(nums[i]==nums[i+1]) {
-//            result.push(nums[i])
-//         //    return true
-//        }
-//     }
-//     return result
-// };
-// console.log(duplicate(nums))
+// find the duplicate elememt and print them 
+// using for loop ;
+// here is TC is O(nlogn)
+let nums=[1,2,5,1,5,3,6]
+function duplicate(nums) {
+    nums.sort()
+    // console.log(nums)
+    let result=[]
+    for(let i=0;i<nums.length;i++){
+       if(nums[i]==nums[i+1]) {
+           result.push(nums[i])
+        //    return true
+       }
+    }
+    return result
+};
+console.log(duplicate(nums))
 
 
 //now we can solve by frequueny counter method 

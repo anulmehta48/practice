@@ -9,7 +9,7 @@
 //             arr[i]=arr[j]
 //             arr[j]=temp
 //         }
-//     }
+//     }i
 // }
 // console.log(arr)
 

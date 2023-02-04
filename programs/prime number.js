@@ -23,3 +23,12 @@
 //     return true;  
 // }
 // console.log(prime(5));
+
+
+// program to check if a number is prime or not
+
+// take input from the user
+const prompt=require('prompt-sync')();
+const number = prompt("Enter a positive number: ");
+console.log(number)
+

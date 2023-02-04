@@ -5,54 +5,54 @@
 
 
 
-// let arr=[10,9,8,7,6,5,4,3,2,1]
-// function mergeSort(arr,start,end){
-//     let mid=Math.floor(start+(end-start)/2)
-//     if(start>=end) return;
+let arr=[10,9,8,7,6,5,4,3,2,1]
+function mergeSort(arr,start,end){
+    let mid=Math.floor(start+(end-start)/2)
+    if(start>=end) return;
 
-//     mergeSort(arr,start,mid);
-//     mergeSort(arr,mid+1,end);
-//     merge(arr,start,mid,end);
-//     return arr
-// }
+    mergeSort(arr,start,mid);
+    mergeSort(arr,mid+1,end);
+    merge(arr,start,mid,end);
+    return arr
+}
 
-// function merge(arr,start,mid,end){
-//     let newArray=new Array()
-//     let index1=start;
-//     let index2=mid+1;
-//     let newArrayindex=0;
+function merge(arr,start,mid,end){
+    let newArray=new Array()
+    let index1=start;
+    let index2=mid+1;
+    let newArrayindex=0;
 
-//     while(index1<=mid && index2<=end){
-//         if(arr[index1]<=arr[index2]){
-//             newArray[newArrayindex]=arr[index1];
-//             newArrayindex++;
-//             index1++
-//         }else{
-//             newArray[newArrayindex]=arr[index2];
-//             newArrayindex++;
-//             index2++
-//         }
-//     }
-//     while(index1<=mid){
-//         newArray[newArrayindex]=arr[index1];
-//         newArrayindex++;
-//         index1++
-//     }
-//     while(index2<=end){
-//         newArray[newArrayindex]=arr[index2];
-//         newArrayindex++;
-//         index2++;
-//     }
+    while(index1<=mid && index2<=end){
+        if(arr[index1]<=arr[index2]){
+            newArray[newArrayindex]=arr[index1];
+            newArrayindex++;
+            index1++
+        }else{
+            newArray[newArrayindex]=arr[index2];
+            newArrayindex++;
+            index2++
+        }
+    }
+    while(index1<=mid){
+        newArray[newArrayindex]=arr[index1];
+        newArrayindex++;
+        index1++
+    }
+    while(index2<=end){
+        newArray[newArrayindex]=arr[index2];
+        newArrayindex++;
+        index2++;
+    }
 
-//     let j=start;
-//     for(let i=0;i<newArray.length;i++){
-//         arr[j]=newArray[i];
-//         j++
-//     }
-// }
+    let j=start;
+    for(let i=0;i<newArray.length;i++){
+        arr[j]=newArray[i];
+        j++
+    }
+}
 
-// console.log(mergeSort(arr,0,9))
-// // console.log(arr)
+console.log(mergeSort(arr,0,9))
+// console.log(arr)
 
 
 
