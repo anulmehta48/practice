@@ -22,13 +22,21 @@
 //     }
 //     return true;  
 // }
-// console.log(prime(5));
+// let N=20
+// for(let i=1;i<=N;i++){
+//     if(prime(i)){
+//         console.log(i)
+//     }
+// }
+// console.log(prime(10));
 
 
 // program to check if a number is prime or not
 
 // take input from the user
-const prompt=require('prompt-sync')();
-const number = prompt("Enter a positive number: ");
-console.log(number)
+// const prompt=require('prompt-sync')();
+// const number = prompt("Enter a positive number: ");
+// console.log(number)
 
+
+//find the factorial number;
