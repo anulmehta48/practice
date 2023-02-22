@@ -42,3 +42,15 @@
 // };
 // console.log(reverseString(s,k,n))
 
+
+
+
+// setInterval(()=>{
+//     console.log("hii")
+    
+// },2000)
+
+clearTimeout(()=>{
+    console.log("22");
+    
+}, 2000);

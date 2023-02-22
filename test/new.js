@@ -59,3 +59,63 @@
 
 //second time test 4sum find
 // https://practice.geeksforgeeks.org/problems/find-all-four-sum-numbers1732/1
+
+
+// let arr1=[2,5,6,8]
+// let arr2=[64,25,36,4]
+
+// function checksquare(arr1,arr2){
+//     if(arr1.length!= arr2.length){
+//         return false;
+//     }
+//     let frq1={}
+//     let frq2={}
+//     for(let val of arr1){
+//         if(frq1[val]){
+//             frq1[val]++
+//         }else{
+//             frq1[val]=1
+//         }
+//         // console.log(frq1)
+//     }
+//     for(let val of arr2){
+//         if(frq2[val]){
+//             frq2[val]++
+//         }else{
+//             frq2[val]=1
+//         }
+//         // console.log(frq2)
+//     }
+    
+//     for(let key in frq1){
+//        if(frq1[key]!=frq2[key**2]){
+//         return false
+//        }
+//        if(frq2[key**2]!=frq1[key]){
+//         return false
+//        }
+//     }
+//     return true
+// }
+// console.log(checksquare(arr1,arr2))
+
+
+var longestCommonPrefix = function(str) {
+
+        if(str.length == 0){
+            return ""
+        }
+        if(str.length == 1){
+            return str[0]
+        }
+        let i =0
+        str.sort()
+        let end = str[0].length
+        while(i<end && str[0][i]==str[str.length-1][i])
+            i++
+            let store = str[0].substring(0,i)
+        return store
+    
+    }
+    
+    console.log(longestCommonPrefix(["ANUL", "ANSHUL", "ANAMIKA"]))

@@ -68,8 +68,8 @@
 //              second:-how many element do you want to delete(Number of counts for delete)
 //              third:- which elements do you want to insert or update(elements it is Optional)
 // example:-
-// let myArray=["kamal","hement","rahul","anul","hhh"]
-// let a=myArray.splice(2,0,"new","nnn")
+// let myArray=["mmm","kamal","hement","rahul","anul","hhh"]
+// let a=myArray.splice(2,1,"klj")
 // console.log(a)
 // console.log(myArray)
 
@@ -142,10 +142,10 @@
 // forvar()
 
 
-var forvar=()=>{
-    var x=20
-    var x=50
-    console.log(x)
-}
-console.log(window.forvar)
+// var forvar=()=>{
+//     var x=20
+//     var x=50
+//     console.log(x)
+// }
+// console.log(window.forvar)
 

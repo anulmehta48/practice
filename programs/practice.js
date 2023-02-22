@@ -526,3 +526,23 @@ console.log(checksquare(arr1,arr2))
 // console.log(bubblesort(arr))
 
 
+
+// var longestCommonPrefix = function(str) {
+
+//     if(str.length == 0){
+//         return ""
+//     }
+//     if(str.length == 1){
+//         return str[0]
+//     }
+//     let i =0
+//     str.sort()
+//     let end = str[0].length
+//     while(i<end && str[0][i]==str[str.length-1][i])
+//         i++
+//         let store = str[0].substring(0,i)
+//     return store
+
+// }
+
+// console.log(longestCommonPrefix(["low", "jower", "kuter"]))
