@@ -76,46 +76,46 @@
 
 
 
-// let str1="Anul"
-// let str2="lunA"
-// function Anagaram(str1,str2){
-//     if(str1.length !=str2.length) return false;
-//     let freq1={}
-//     let freq2={}
+let str1="Anul"
+let str2="lunA"
+function Anagaram(str1,str2){
+    if(str1.length !=str2.length) return false;
+    let freq1={}
+    let freq2={}
 
-//     for(let val of str1){
-//         if(freq1[val]){
-//             freq1[val]++
-//         }else{
-//             freq1[val]=1
-//         }
-//         console.log(freq1[val])
-//     }
+    for(let val of str1){
+        if(freq1[val]){
+            freq1[val]++
+        }else{
+            freq1[val]=1
+        }
+        // console.log(freq1[val])
+    }
    
-//     for(let val of str2){
-//         if(freq2[val]){
-//             freq2[val]++
-//         }else{
-//             freq2[val]=1
-//         }
-//         console.log(freq2[val])
-//     }
-//     console.log(freq1,freq2)
-//     for(let key in freq1){
-//         if(!(key in freq2)){
-//             return false
-//         }
-//         // if(freq1[key] !=freq2[key]){
-//         //     return false
-//         // }
-//         if(freq2[key] != freq1[key]){
-//             return false
-//         }
+    for(let val of str2){
+        if(freq2[val]){
+            freq2[val]++
+        }else{
+            freq2[val]=1
+        }
+        console.log(freq2[val])
+    }
+    // console.log(freq1,freq2)
+    for(let key in freq1){
+        if(!(key in freq2)){
+            return false
+        }
+        // if(freq1[key] !=freq2[key]){
+        //     return false
+        // }
+        if(freq2[key] != freq1[key]){
+            return false
+        }
 
-//     }
-//     return true;
-// }
-// console.log(Anagaram(str1,str2))
+    }
+    return true;
+}
+console.log(Anagaram(str1,str2))
 
 
 
@@ -124,8 +124,8 @@
 
 
 //check given string is anagram of not
-let str1=["h","e","l","l","o"]
-let str2=["o","l","l","e","h"]
+// let str1=["h","e","l","l","o"]
+// let str2=["o","l","l","e","h"]
 
 // function ana(str1,str2){
 // str1.sort()

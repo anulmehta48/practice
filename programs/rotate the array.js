@@ -58,17 +58,88 @@
 // console.log(arr)
 
 
-let nums=[3,4,5,1,2]
-var findMin = function(nums) {
-    let left = 0
-    let right = nums.length-1
-    while(left<right){
-        let mid = Math.floor((left+right)/2)
-        if(nums[mid]>nums[right])
-            left = mid +1
-        else
-            right = mid
-    }
-     return nums[left]
- };
- console.log(findMin(nums))
+// let nums=[3,4,5,1,2]
+// var findMin = function(nums) {
+//     let left = 0
+//     let right = nums.length-1
+//     while(left<right){
+//         let mid = Math.floor((left+right)/2)
+//         if(nums[mid]>nums[right])
+//             left = mid +1
+//         else
+//             right = mid
+//     }
+//      return nums[left]
+//  };
+//  console.log(findMin(nums))
+
+
+//this is clouesr
+// function myFunc(n){
+//     let a=10;
+//     function senc(){
+//         console.log(a)
+//     }
+//     senc()
+// }
+// myFunc()
+
+//funtion => A function is set of statment that perform perticular taks based on input and return some output from it that is called function.
+// function sum(a,b){
+//     let total=a+b;
+//     return total
+// }
+// console.log(sum(9,5))
+
+
+// function Square(){
+//     console.log("this is square");
+// }
+
+// function secondFun(){
+//     console.log("this is second fun")
+//     Square()
+// }
+// secondFun()
+
+
+// let arr=[2,3,4,5,7]
+// let result=arr.filter((x)=>x%2==1)
+// console.log(result)
+
+
+// let arr=[2,3,4,5,7]
+// function findSum(arr){
+//     let sum=0;
+//     for(let i=0;i<arr.length;i++){
+//         sum=sum+arr[i]
+//     }
+//     return sum
+// }
+// console.log(findSum(arr))
+
+
+// let result=arr.reduce((acc,curr)=>{
+//     acc=acc+curr
+//     return acc
+// },0)
+// console.log(result)
+
+
+//forEach
+
+// let arr=[2,3,4,5,7]
+
+// let result=arr.forEach((x)=>console.log(x))
+// console.log(result)
+
+// let mytotal=new Promise((resolve,reject)=>{
+//     const myLink="https://github.com/anulmehta48/SquareSoft.git"
+
+//     const user=fetch(myLink) 
+//     // console.log(user)
+// })
+// .then(()=>console.log(mytotal))
+// .catch((err)=>console.log(err))
+
+

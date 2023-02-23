@@ -33,7 +33,7 @@
 // }
 // ReverseNumber(10)
 
-//this is head recursion because recurive call in first
+// this is head recursion because recurive call in first
 // function ReverseNumber(n){
 //     if(n==0)
 //         return;

@@ -191,33 +191,110 @@
 // console.log(reverseArray(arr))
 
 
-let arr=["ANUL","ANMOL","ANAMIKA","ANOKHA"]
+// let arr=["ANUL","ANMOL","ANAMIKA","ANOKHA"]
 
-function loggestprefix(arr){
-    if(arr.length==0){
-        return ""
-    }
-    if(arr.length==1){
-        return arr[0]
-    }
-    let ans=[]
-//    let takeElement=arr[0]
-   for(let i=0;i<arr[0].length;i++){
-        let ch=arr[0][i]
-        let flag=true
-        for(let j=1;j<arr.length;j++){
-            if(arr[j].length <i|| ch!=arr[j][i]){
-                flag=false;
-                break;
-            }
-        }
-        if(flag==false){
-            break;
-        }else{
-            ans.push(ch)
-        }
-   }
-   return ans;
+// function loggestprefix(arr){
+//     if(arr.length==0){
+//         return ""
+//     }
+//     if(arr.length==1){
+//         return arr[0]
+//     }
+//     let ans=[]
+// //    let takeElement=arr[0]
+//    for(let i=0;i<arr[0].length;i++){
+//         let ch=arr[0][i]
+//         let flag=true
+//         for(let j=1;j<arr.length;j++){
+//             if(arr[j].length <i|| ch!=arr[j][i]){
+//                 flag=false;
+//                 break;
+//             }
+//         }
+//         if(flag==false){
+//             break;
+//         }else{
+//             ans.push(ch)
+//         }
+//    }
+//    return ans;
 
-}
-console.log(loggestprefix(arr))
+// }
+// console.log(loggestprefix(arr))
+
+
+// function primeNumber(n){
+//     if(n==0 || n==1){
+//         return false
+//     }
+//     if(n==2) return true
+//     for(let i=2;i<n;i++){
+//         if(n%i==0){
+//             return false
+//         }
+//         return true
+//     }
+//     let N=20
+//     for(let i=1;i<=N;i++){
+//         if(primeNumber(i)){
+//             console.log(i)
+//         }
+//     }
+
+// }
+// primeNumber()
+
+
+
+// function printPrime(n){
+//     if(n==0||n==1) return false
+//     for(var i=2;i<=n;i++){
+//         for(var j=2;j<i;j++){
+//             if(i%j==0){
+//                 break;
+//             }  
+//         }
+//         if(i==j){
+//             console.log(i)
+//         }
+//     }
+// }
+// printPrime(20)
+
+
+// let arr=["ANUL","ANMOL","ANAMIKA"]
+// function loggestPrifix(arr){
+//   if(arr.length==0) return "";
+//   if(arr.length==1) return arr[0];
+//   let ans=[]
+//   for(let i=0;i<arr[0].length;i++){
+//     let ch=arr[0][i]
+//     let flag=true;
+//     for(let j=1;j<arr.length;j++){
+//       if(arr[j].length<i||ch!=arr[j][i]){
+//         flag=false;
+//         break;
+//       }
+//     }
+//     if(flag==false){
+//       break;
+//     }else{
+//       ans.push(ch)
+//     }
+//   }
+//   return ans 
+// }
+// console.log(loggestPrifix(arr))
+
+let arr1=[1,2,3,4,5]
+let arr2=[1,6,3,7,5]
+
+// let arr3=arr1.filter((data)=>arr2.includes(data))
+// console.log(arr3)
+
+// function intercation(arr1,arr2){
+//   let arr3=new Array()
+//       arr3=arr1.filter((d)=>arr2.include(d))
+//       return arr3
+// }
+// console.log(intercation(arr1,arr2))

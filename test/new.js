@@ -118,4 +118,4 @@ var longestCommonPrefix = function(str) {
     
     }
     
-    console.log(longestCommonPrefix(["ANUL", "ANSHUL", "ANAMIKA"]))
+console.log(longestCommonPrefix(["ANUL", "ANSHUL", "ANAMIKA"]))

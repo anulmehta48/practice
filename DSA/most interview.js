@@ -47,22 +47,22 @@
 //Q4 Wite a JS program to cyclically rotate the an array -rotate(arr,d) that rotates by d elements:
 // example: arr=[1,2,3,4,5]  rotated by 2 d =>[4,5,1,2,3]
 //here is Time Complexity is O(N)
-// let arr=[36,37,40,45,50,55,60,65] //=>[60,65,36,37,40,45,50,55]
-// let k=2
-// function rotateArray(arr,i,j){
-//     while(i<j){
-//         arr[i]=arr[i]+arr[j]
-//         arr[j]=arr[i]-arr[j]
-//         arr[i]=arr[i]-arr[j]
-//         i++;
-//         j--;
-//     }
-//     return arr
-// }
-// arr=rotateArray(arr,0,arr.length-1)// reverse complete all array
-// arr=rotateArray(arr,0,k-1) // first K elements reverse
-// arr=rotateArray(arr,k,arr.length-1) // last K elements reverse
-// console.log(arr)
+let arr=[36,37,40,45,50,55,60,65] //=>[60,65,36,37,40,45,50,55]
+let k=2
+function rotateArray(arr,i,j){
+    while(i<j){
+        arr[i]=arr[i]+arr[j]
+        arr[j]=arr[i]-arr[j]
+        arr[i]=arr[i]-arr[j]
+        i++;
+        j--;
+    }
+    return arr
+}
+arr=rotateArray(arr,0,arr.length-1)// reverse complete all array
+arr=rotateArray(arr,0,k-1) // first K elements reverse
+arr=rotateArray(arr,k,arr.length-1) // last K elements reverse
+console.log(arr)
 
 
 
