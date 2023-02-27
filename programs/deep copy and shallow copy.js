@@ -148,14 +148,14 @@
 // console.log(newArray)
 
 //3 way using spread
-const string = 'hello'
+// const string = 'hello'
 
 // const stringArray = [...string]
 
 // console.log(stringArray)
 
 
-//REST Parameter=> this is oppiste of spared and it is passed in paramer 
+//REST Parameter=> this is opposite of spared and it is passed in paramer 
 // 1. way of rest
 // const [firstTool, ...rest] = ['hammer', 'screwdriver', 'wrench']
 
@@ -180,10 +180,12 @@ let myObject={
   department:"software"
 }
 
+//this is normal way to do this 
 // let newObject={}
 // newObject['anul']='name'
 // newObject['24']='age'
 
+//this is new way to do this 
 let newObject={}
 Object.entries(myObject).forEach(entry=>{
   let key=entry[0]
@@ -193,3 +195,7 @@ Object.entries(myObject).forEach(entry=>{
 })
 
 console.log(newObject)
+
+
+let arr=[2,12,22]
+arr.concat()

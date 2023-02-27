@@ -223,26 +223,26 @@
 // console.log(loggestprefix(arr))
 
 
-// function primeNumber(n){
-//     if(n==0 || n==1){
-//         return false
-//     }
-//     if(n==2) return true
-//     for(let i=2;i<n;i++){
-//         if(n%i==0){
-//             return false
-//         }
-//         return true
-//     }
-//     let N=20
-//     for(let i=1;i<=N;i++){
-//         if(primeNumber(i)){
-//             console.log(i)
-//         }
-//     }
+function primeNumber(n){
+    if(n==0 || n==1){
+        return false
+    }
+    if(n==2) return true
+    for(let i=2;i<n;i++){
+        if(n%i==0){
+            return false
+        }
+        return true
+    }
+    let N=20
+    for(let i=1;i<=N;i++){
+        if(primeNumber(i)){
+            console.log(i)
+        }
+    }
 
-// }
-// primeNumber()
+}
+primeNumber()
 
 
 
@@ -298,3 +298,15 @@ let arr2=[1,6,3,7,5]
 //       return arr3
 // }
 // console.log(intercation(arr1,arr2))
+
+// function primeNumber(n){
+//     if(n==0|| n==1) return false
+   
+//     if(n==2) return true
+
+//     for(let i=2;i<n;i++){
+//         if(n%i==0) return false
+//     }
+//     return true
+// }
+// console.log(primeNumber(6))
