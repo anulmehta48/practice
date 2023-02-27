@@ -186,16 +186,18 @@ let myObject={
 // newObject['24']='age'
 
 //this is new way to do this 
-let newObject={}
-Object.entries(myObject).forEach(entry=>{
-  let key=entry[0]
-  let value=entry[1]
-  newObject[value]=key
+// let newObject={}
+// Object.entries(myObject).forEach(entry=>{
+//   let key=entry[0]
+//   let value=entry[1]
+//   newObject[value]=key
   
-})
+// })
 
-console.log(newObject)
+// console.log(newObject)
 
 
-let arr=[2,12,22]
-arr.concat()
+// let arr=[2,12,22]
+// arr.concat()
+
+
