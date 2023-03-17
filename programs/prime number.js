@@ -1,3 +1,4 @@
+//this is normal check input is prime or not 
 // function prime(n){
 //     if(n==0||n==1) return false;
 //     if(n==2) return true;
@@ -7,6 +8,7 @@
 //     return true;
 // }
 // console.log(prime(6));
+
 
 // function printPrimeNumer(n){
 //     if(n==0||n==1) return false;
@@ -79,3 +81,36 @@
 //     return ans
 // }
 // console.log(printPrimeNumer(10))
+
+
+// this is for print the prime number and also print the next prime number of given input if it is prime only otherwise not print.
+function printPrimeNumer(n){
+    if(n==0||n==1) return false;
+    let ans=[]
+    for(let i=2;i<=n;i++){
+        let isPrime=true
+        for(let j=2;j<i;j++){
+            if(i%j==0){
+                isPrime=false;
+                break;
+            }
+        }
+        if(isPrime){
+            ans.push(i)
+        }
+    }
+    function checkPrime(n){
+        if(n%2==0){
+            return false
+        }else{
+            return true
+        }
+    }
+   let current=n+1
+   if(checkPrime(current)){
+    ans.push(current)
+   }
+   return ans
+}
+console.log(printPrimeNumer(8))
+

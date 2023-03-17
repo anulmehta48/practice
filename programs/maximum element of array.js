@@ -74,14 +74,14 @@
 
 
 //maximum and minimum
-// let arr=[1,5,2,3,8,3,10]
-// function maxminnumber(arr){
-//     let max = arr[0];
-//     let min = arr[0];
-//          for(let i=0;i<arr.length;i++){
-//             if(arr[i]>max) max = arr[i];
-//             else if(arr[i] < min)  min = arr[i]
-//          }
-//          return (`${max} ,${min}`);
-//   }
-//   console.log(maxminnumber(arr))
+let arr=[1,5,2,3,8,3,10]
+function maxminnumber(arr){
+    let max = arr[0];
+    let min = arr[0];
+         for(let i=0;i<arr.length;i++){
+            if(arr[i]>max) max = arr[i];
+            else if(arr[i] < min)  min = arr[i]
+         }
+         return (`${max} ,${min}`);
+  }
+  console.log(maxminnumber(arr))

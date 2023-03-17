@@ -1,1 +1,0 @@
-// What is Linklist= Liknklist is the Linear data Structure that is made by collection of object called Node

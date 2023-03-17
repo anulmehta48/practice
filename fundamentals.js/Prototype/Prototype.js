@@ -1,5 +1,6 @@
 //Prototype => Whenever we created anything in javascript like array,object,functions and even varible so that javascript engine autometically 
-// put its hidden properties into an object and attached it to your object so that you get Access those properties and methods of objects like-
+// put its hidden properties into an object and attached it to your object so that you get Access those properties and methods of objects 
+//that is called prototype like-
 
 //1.In Array Objects in like this way-
 // let arr=["Anul","Mohit","Akashay"]
@@ -10,6 +11,7 @@
 // arr.pop()
 // arr.slice()
 // arr.splice()
+// arr.fill()
 
 
 //2.In Object in like this way-
@@ -42,6 +44,7 @@
 
 //4. In Varibles also-
 // let a=20
+
 // a.toString()
 // a.toFixed()
 // a.valueOf()
@@ -49,7 +52,9 @@
 // a.toPrecision()
 
 
+// In String also -
 // let str="Anul"
+
 // str.charCodeAt()
 // str.charAt()
 // str.concat()

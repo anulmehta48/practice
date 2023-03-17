@@ -37,21 +37,3 @@ function secondLarest(arr){
 console.log(secondLarest(arr))
 
 
-
-
-// function print(arr,n){
-//   let result=[]
-//   for(let i=0;i<arr.length;i+2){
-//       result.push(arr)
-//   }
-//   return result
-//   }
-
-
-
-
-// for(let i=1;i<=10;i++){
-// 	if(i%2==0){
-// 		console.log("The all even numbers in first 50 natural numbers is = ",i)
-// 	}
-// }

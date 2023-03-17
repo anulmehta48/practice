@@ -15,13 +15,53 @@
 // console.log(reversse(arr))
 
 
+//revser uisng temp variable-
+// let arr = [1, 36, 8, 7, 2, 6]
+// function reverseString(arr) {
+//     let start = 0;
+//     let end = arr.length-1;
+//     while (start <= end) {
+//         let temp = arr[start];
+//         arr[start] = arr[end];
+//         arr[end] = temp;
+//         start++;
+//         end--;
+//     }
+//     return arr
+// };
+// console.log(reverseString(arr))
+
+
+//using destructuring swap the alternative element of array-
+let arr = [2, 1, 4, 5, 6, 7, 8, 11]
+function swapAlternate(arr) {
+  [arr[0],arr[arr.length-1]]=[arr[arr.length-1],arr[0]]
+  return arr
+}
+console.log(swapAlternate(arr))
+
+//uinsg destructing method
+// let a=10;
+// let b=20;
+// [a,b]=[b,a];
+// console.log(a,b)
+
+
+// Using Bitwise XOR operator
+// let a=10;
+// let b=20;
+// a=a^b
+// b=a^b
+// a=a^b
+// console.log(a,b)
+
+
 // let arr = [2, 1, 4, 5, 6, 7, 8, 11]
-// // let size=arr.length
 // function swapAlternate(arr) {
-//   [arr[0],arr[arr.length-1]]=[arr[arr.length-1],arr[0]]
-//   return arr
+   
 // }
 // console.log(swapAlternate(arr))
+
 
 
 // s = ["h", "e", "l", "l", "o"]
@@ -47,37 +87,20 @@
 // console.log(reverse(s));
 
 
+
+
+
 // let s = [1, 36, 8, 7, 2, 6]
 // function reverseString(s) {
-//     let left = 0;
-//     let end = s.length-1;
-//     while (left < end) {
-//         //swap
-//         let temp = 0;
-//         temp = s[left];
-//         s[left] = s[end];
-//         s[end] = temp;
-//         // console.log(temp)
-
-//         left++;
-//         end--;
+//     let arr=[...s]
+//     let temp=0
+//     for(let i=arr.length-1;i>=0;i--){
+//         s[temp]=arr[i]
+//         temp++
 //     }
 //     return s
 // };
 // console.log(reverseString(s))
-
-
-let s = [1, 36, 8, 7, 2, 6]
-function reverseString(s) {
-    let arr=[...s]
-    let temp=0
-    for(let i=arr.length-1;i>=0;i--){
-        s[temp]=arr[i]
-        temp++
-    }
-    return s
-};
-console.log(reverseString(s))
 
 //revere the first 3 element of the array 
 // let s = [1, 36, 8, 7, 2, 6]
