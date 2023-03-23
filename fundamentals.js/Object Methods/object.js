@@ -64,3 +64,92 @@
 //     NewObject[value]=key
 // })
 // console.log(NewObject)
+
+
+
+// destructing => destructing is used to create a variable from any array elements and object properyrs like this -
+// using is Array
+// let arr=[25,10,26,22,30]
+// let [a,b,c,d,e]= arr
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// console.log(d)
+// console.log(e)
+
+// 2 using in object
+// let obj={
+//     id:1,
+//     title:"my fist note",
+//     date:"23/2/2020"
+// }
+
+// let {id,title,data}=obj
+// console.log(id)
+// console.log(title)
+// console.log(data)
+
+
+//Spread operoter (...) =>  spread is used for unpack or expand the values of array ,object and functions like
+// 1 normal  way to merge two array 
+// let arr=["apple","banana","rebbit"]
+// let brr=["loki","tamatar","patato"]
+// let newArray=arr.concat(brr)
+// console.log(newArray)
+
+// 2. way using spread ...
+// let arr=["apple","banana","rebbit"]
+// let brr=["loki","tamatar","patato"]
+// let newArray=[...arr,...brr]
+// console.log(newArray)
+
+//3 way using spread
+// const string = 'hello'
+
+// const stringArray = [...string]
+
+// console.log(stringArray)
+
+
+//REST Parameter=> this is oppiste of spared and it is passed in paramer 
+// 1. way of rest
+// const [firstTool, ...rest] = ['hammer', 'screwdriver', 'wrench']
+
+// console.log(firstTool)
+// console.log(rest)
+// // 2. way of rest
+
+// function restTest(...args) {
+//     console.log(args)
+//   }
+  
+// restTest(1, 2, 3, 4, 5, 6)
+
+
+
+
+//key to value and value to keys in object
+
+// let myObject={
+//   name:"anul",
+//   age:"24",
+//   department:"software"
+// }
+
+// let newObject={}
+// newObject['anul']='name'
+// newObject['24']='age'
+
+// let newObject={}
+// Object.entries(myObject).forEach(entry=>{
+//   let key=entry[0]
+//   let value=entry[1]
+//   newObject[value]=key
+  
+// })
+
+// console.log(newObject)
+
+
+// let arr=[2,12,22]
+// arr.concat()

@@ -33,12 +33,12 @@
 
 
 //using destructuring swap the alternative element of array-
-let arr = [2, 1, 4, 5, 6, 7, 8, 11]
-function swapAlternate(arr) {
-  [arr[0],arr[arr.length-1]]=[arr[arr.length-1],arr[0]]
-  return arr
-}
-console.log(swapAlternate(arr))
+// let arr = [2, 1, 4, 5, 6, 7, 8, 11]
+// function swapAlternate(arr) {
+//   [arr[0],arr[arr.length-1]]=[arr[arr.length-1],arr[0]]
+//   return arr
+// }
+// console.log(swapAlternate(arr))
 
 //uinsg destructing method
 // let a=10;

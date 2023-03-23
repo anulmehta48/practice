@@ -1,7 +1,9 @@
+//! what is Shallow copy =>
 //this is normal object and we are copy one object value in another object
 //here we are doing normal copy so that is copy the refrence address of object that is called call by reference
-//so that when you change in one object it reflected in another object also beacuse here object referece address(memory) are copied happens
-
+//so that when you change in one object it reflected in another object also beacuse here object same referece address(memory) are copied happens
+//this is called shallow copy beacause of both have same addresss in memory.
+// exapmle =>
 // let obj={
 //     name:"anul"
 // }
@@ -12,10 +14,16 @@
 // console.log(obj)   //mohan
 // console.log(user) // mohan
 
-// so that how we can do extact copy so in object has two type of copy method -1.shallow copy and 2 Deep copy
+// ! What is Deep copy =>
+// when we are doing deepcopy of one object into another object then it will copy the all values of original object into copied object
+//but here both object have diffrent diffrent memory address so when we do some changes in any one objects values then it will not reflected 
+// into another objects that is called deep copy because of both have diffrent memory address.
 
-// lets used shallow copy how to do -
-// 1. using Object.assign({},objectename) but this is do only first level copy happen and here object values are copied happens
+
+// so how we can do extact copy so that in object has Deep copy method
+// lets used deepcopy how to do -
+
+//? 1. using Object.assign({},objectename) but this is do only first level copy happen and here object values are copied happens
 // let obj={
 //     name:"anul"
 // }
@@ -26,8 +34,9 @@
 // console.log(obj)   //anul
 // console.log(user) //mohan
 
-// 2. using spread opertor but this is do only first level copy happen and here  object values are copied happens
 
+
+//? 2. using spread opertor but this is do only first level copy happen and here  object values are copied happens
 // let obj={
 //     name:"anul"
 // }
@@ -39,7 +48,7 @@
 // console.log(user) //mohan
 
 
-// now we have multile level objects then how we can do things but some problem in both Object.assign({},obj) and spread(...) here that is 
+//*now we have multile level objects then how we can do things but some problem in both Object.assign({},obj) and spread(...) here that is 
 
 // let obj={
 //     name:"anul",
@@ -58,7 +67,7 @@
 // now how to copy neseted or multiple level copy that is called deep copy 
 //so here we using two type of method 1.JSON.parse(JSON.stringify()) and 2.Lodash packages 
 
-// 1. using JSON.parse()
+//? 1. using JSON.parse()
 
 // let obj={
 //     name:"anul",
@@ -92,8 +101,8 @@
 // console.log(obj)   //all object values 
 // console.log(user) //not all object values
 
-//but here also one problem occur when if you have object inside function key values  or Date values then it will not copy that valuse it ignore that valuse
-//so how we can resove that so here Lodash packages used for it
+// but here also one problem occur when if you have object inside function key values  or Date values then it will not copy that valuse it ignore that valuse
+//? so how we can resove that so here Lodash packages used for it
 
 // let obj={
 //     name:"anul",
@@ -197,5 +206,5 @@
 // console.log(newObject)
 
 
-let arr=[2,12,22]
-arr.concat()
+// let arr=[2,12,22]
+// arr.concat()

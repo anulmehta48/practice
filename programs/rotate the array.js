@@ -36,26 +36,24 @@
 // console.log(arr)
 
 
-// let arr=[3,4,5,1,2] //=>[60,65,36,37,40,45,50,55,60,65]
-// let k=2
-// function rotateArray(arr,i,j){
-//     // let i=0;
-//     // let j=arr.length-1;
-//     while(i<j){
-//         arr[i]=arr[i]+arr[j]
-//         arr[j]=arr[i]-arr[j]
-//         arr[i]=arr[i]-arr[j]
-//         i++;
-//         j--;
-//     }
+let arr=[3,4,5,1,2] //=>[60,65,36,37,40,45,50,55,60,65]
+let k=2
+function rotateArray(arr,i,j){
+    while(i<j){
+        arr[i]=arr[i]+arr[j]
+        arr[j]=arr[i]-arr[j]
+        arr[i]=arr[i]-arr[j]
+        i++;
+        j--;
+    }
     
-//     return arr
-// }
-// arr=rotateArray(arr,0,arr.length-1)// reverse complete all array
-// arr=rotateArray(arr,0,k-1) // first K elements reverse
-// arr=rotateArray(arr,k,arr.length-1) // last K elements reverse
+    return arr
+}
+rotateArray(arr,0,arr.length-1)// reverse complete all array
+rotateArray(arr,0,k-1) // first K elements reverse
+rotateArray(arr,k,arr.length-1) // last K elements reverse
 // console.log(arr[0])
-// console.log(arr)
+console.log(arr)
 
 
 // let nums=[3,4,5,1,2]
