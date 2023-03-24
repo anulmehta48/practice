@@ -82,8 +82,9 @@
 // }
 // console.log(printPrimeNumer(10))
 
-
-// this is for print the prime number and also print the next prime number of given input if it is prime only otherwise not print.
+//**********very important question for interview  */
+//** this is question i am not able to solve in interview  */
+// **this is for print the prime number and also print the next prime number of given input if it is prime only otherwise not print.
 function printPrimeNumer(n){
     if(n==0||n==1) return false;
     let ans=[]
@@ -100,11 +101,10 @@ function printPrimeNumer(n){
         }
     }
     function checkPrime(n){
-        if(n%2==0){
-            return false
-        }else{
-            return true
+    for(let i = 2; i< n; i++){
+        if(n%i==0) return false;
         }
+        return true;
     }
    let current=n+1
    if(checkPrime(current)){
@@ -112,5 +112,5 @@ function printPrimeNumer(n){
    }
    return ans
 }
-console.log(printPrimeNumer(8))
+console.log(printPrimeNumer(14))
 

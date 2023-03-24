@@ -25,8 +25,8 @@
 
 //how can i inseart a key or a value
 //myProfile.address="kota"//this is dot . notaion
-//myProfile['pincode']=324005 // this is object [''] notetion
-//myProfile.pincode=324005 // this is object [''] notetion
+//myProfile['pincode']=324005 // this is object [''] notation
+//myProfile.pincode=324005 // this is object  dot. notation
 // console.log(myProfile)
 // myProfile.our-country="india"//this is not work or given error or SyntaxError
 //myProfile['our-country']="india"//this is work properly
@@ -52,7 +52,7 @@
 //     age:"25",
 //     department:"state"
 // }
-// one by one only change like this-
+// // one by one only change like this-
 // let NewObject={}
 // NewObject["Anul"]="name"
 // console.log(NewObject)

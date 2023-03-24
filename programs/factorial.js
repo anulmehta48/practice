@@ -1,16 +1,16 @@
 //find the factorial;
-function factorial(n){
-    let answer = 1;
-    if (n == 0 || n == 1){
-      return answer;
-    }else{
-      for(var i = n; i >= 1; i--){
-        answer = answer * i;
-      }
-      return answer;
-    }  
-}
-console.log(factorial(5))
+// function factorial(n){
+//     let answer = 1;
+//     if (n == 0 || n == 1){
+//       return answer;
+//     }else{
+//       for(var i = n; i >= 1; i--){
+//         answer = answer * i;
+//       }
+//       return answer;
+//     }  
+// }
+// console.log(factorial(5))
 
 
 // function factorial(n){
@@ -26,10 +26,10 @@ console.log(factorial(5))
 // console.log(factorial(5))
 
 
-function factorial(n){
-  if(n==1) return 1;
-  return n*factorial(n-1)
-}
-console.log(factorial(5))
+// function factorial(n){
+//   if(n==1) return 1;
+//   return n*factorial(n-1)
+// }
+// console.log(factorial(5))
 
 

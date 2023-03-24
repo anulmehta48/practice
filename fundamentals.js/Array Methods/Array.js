@@ -94,7 +94,7 @@
 //9. slice() :- slice is used for takes the elements form the array and create the new array with tooked elemets but not removed from oringinal array
 //              and it take 1 or 2 argument :like-(1,5) starting from 1 argument but not including last 5 argument it take values from(1,2,3,4)
 // example:-
-// let myArray=["kamal","hement","rahul","anul","hhh"]
+let myArray=["kamal","hement","rahul","anul","hhh"]
 // let a=myArray.slice(1)// this is detetd first 1 element and give all rest elements another new array
 // let b=myArray.slice(1,4) // if i used the line it start from index 1 to index 3 elements gives you it is not include last or second parameter
 // let c=myArray.slice(3)  //if you used this line then it start from 3 and gives you all rest element of array

@@ -53,13 +53,14 @@
 
 
 // In String also -
-// let str="Anul"
+let str="Anul"
 
-// str.charCodeAt()
-// str.charAt()
-// str.concat()
-// str.length
-// str.indexOf()
+str.charCodeAt()
+str.charAt()
+str.concat()
+str.length
+str.indexOf()
+
 
 
 //What is prototype Inheritance in javascript
