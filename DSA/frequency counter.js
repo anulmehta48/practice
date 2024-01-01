@@ -82,25 +82,25 @@
 //if same then check the square of array 1 elements is does present in array of 2 elements
 //but in this aporach in TC is O(n^2)
 //
-let arr1=[2,3,4,6]
-let arr2=[36,9,16,4]
-function same(arr1,arr2){
-    if(arr1.length !== arr2.length){
-        return false
-    }
-    for(let i=0;i<arr1.length;i++){
-        // console.log(i)//this is for for loop iteration one by one 
-        let correctIndex=arr2.indexOf(arr1[i]**2) //this line check where is square element index is present in arr2 of arr1 element
-        console.log(correctIndex)//this is for index of square element
-        if(correctIndex ==-1){
-            return false
-        }
-       a=arr2.splice(correctIndex,1)
-       console.log(a)//if element is present then delete that 
-    }
-    return true
-}
-console.log(same(arr1,arr2))
+// let arr1=[2,3,4,6]
+// let arr2=[36,9,16,4]
+// function same(arr1,arr2){
+//     if(arr1.length !== arr2.length){
+//         return false
+//     }
+//     for(let i=0;i<arr1.length;i++){
+//         // console.log(i)//this is for for loop iteration one by one 
+//         let correctIndex=arr2.indexOf(arr1[i]**2) //this line check where is square element index is present in arr2 of arr1 element
+//         console.log(correctIndex)//this is for index of square element
+//         if(correctIndex ==-1){
+//             return false
+//         }
+//        a=arr2.splice(correctIndex,1)
+//        console.log(a)//if element is present then delete that 
+//     }
+//     return true
+// }
+// console.log(same(arr1,arr2))
 // this is sloved but TC is O(n^2)
 
 

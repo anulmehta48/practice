@@ -3,8 +3,6 @@
 //here bestcase TC is O(nlogn);
 //here averagecase TC is O(nlogn);
 
-
-
 // let arr=[10,9,8,7,6,5,4,3,2,1]
 // function mergeSort(arr,start,end){
 //     let mid=Math.floor(start+(end-start)/2)
@@ -54,62 +52,57 @@
 // console.log(mergeSort(arr,0,9))
 // console.log(arr)
 
+let arr = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+let start = 0;
+let end = arr.length - 1;
 
+function mergeSort(arr, start, end) {
+  if (start >= end) return;
 
-let arr=[2,5,1,1,7,8,9]
-let start=0;
-let end=arr.length-1;
-
-function mergeSort(arr,start,end){
-  let mid=Math.floor(start+(end-start)/2)
-  if(start>=end) return;
-  
-  mergeSort(arr,start,mid);
-  mergeSort(arr,mid+1,end);
-  merge(arr,start,mid,end);
-  return arr
+  let mid = Math.floor(start + (end - start) / 2);
+  mergeSort(arr, start, mid);
+  mergeSort(arr, mid + 1, end);
+  merge(arr, start, mid, end);
+  return arr;
 }
 
-function merge(arr,start,mid,end){
-  let newArray=new Array();
-  let index1=start;
-  let index2=mid+1;
-  let newArrayindex=0;
-  
-  while(index1<=mid && index2<=end){
-    if(arr[index1]<=arr[index2]){
-      newArray[newArrayindex]=arr[index1];
+function merge(arr, start, mid, end) {
+  let newArray = new Array();
+  let index1 = start;
+  let index2 = mid + 1;
+  let newArrayindex = 0;
+
+  while (index1 <= mid && index2 <= end) {
+    if (arr[index1] <= arr[index2]) {
+      newArray[newArrayindex] = arr[index1];
       newArrayindex++;
-      index1++
-    }else{
-      newArray[newArrayindex]=arr[index2];
+      index1++;
+    } else {
+      newArray[newArrayindex] = arr[index2];
       newArrayindex++;
-      index2++
+      index2++;
     }
   }
-  
-  while(index1<=mid){
-    newArray[newArrayindex]=arr[index1];
+
+  while (index1 <= mid) {
+    newArray[newArrayindex] = arr[index1];
     newArrayindex++;
-    index1++
+    index1++;
   }
-  
-  while(index2<=end){
-    newArray[newArrayindex]=arr[index2];
+
+  while (index2 <= end) {
+    newArray[newArrayindex] = arr[index2];
     newArrayindex++;
-    index2++
+    index2++;
   }
-  
-  let j=start;
-  for(let i=0;i<newArray.length;i++){
-    arr[j]=newArray[i]
-    j++
+
+  let j = start;
+  for (let i = 0; i < newArray.length; i++) {
+    arr[j] = newArray[i];
+    j++;
   }
 }
-console.log(mergeSort(arr,start,end))
-
-
-
+console.log(mergeSort(arr, start, end));
 
 // let arr=[10,9,8,7,6,5,4,3,2,1]
 // function merge(arr, l, m, r){
@@ -123,12 +116,11 @@ console.log(mergeSort(arr,start,end))
 //         L[i] = arr[l + i];
 //     for (let j = 0; j < n2; j++)
 //         R[j] = arr[m + 1 + j];
- 
 
 //     let i = 0;
 //     let j = 0;
 //     let k = l;
- 
+
 //     while (i < n1 && j < n2) {
 //         if (L[i] <= R[j]) {
 //             arr[k] = L[i];
@@ -146,7 +138,7 @@ console.log(mergeSort(arr,start,end))
 //         i++;
 //         k++;
 //     }
- 
+
 //     while (j < n2) {
 //         arr[k] = R[j];
 //         j++;
@@ -162,9 +154,7 @@ console.log(mergeSort(arr,start,end))
 //    merge(arr,l,m,r);
 // }
 
-
 // console.log(mergeSort(arr,0,9))
-
 
 // let arr=[90,1,14,32,60,42,80,45,11,40]
 // let start=0;

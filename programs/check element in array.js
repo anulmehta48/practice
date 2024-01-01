@@ -1,5 +1,5 @@
 //check arr1 element are present in arr2 and return the element
-// let arr1=[2,5,7,9,12]
+// let arr1=[2,5,7,9,12,3]
 // let arr2=[2,5,3]
 // function checkarray(arr1,arr2){
 //     let result=[]
@@ -7,7 +7,7 @@
 //         let element=arr1[i]
 //         for(let j=0;j<arr2.length;j++){
 //             if(element==arr2[j]){
-//                 return true
+//                 result.push(arr2[j])
 //             }
 //         }
 //     }
@@ -19,7 +19,7 @@
 // let arr1=[2,5,7,9,12]
 // let arr2=[1,2,3]
 // function checkarray(arr1,arr2){
-//     // let result=[]
+    // let result=[]
 //     for(let i=0;i<arr2.length;i++){
 //         if(arr1[i]!=arr2[i]){
 //             return false
@@ -32,22 +32,22 @@
 
 
 
-let arr1=[2,5,7,9,12]
-let arr2=[1,2,3]
-function checkarray(arr1,arr2){
-    let count=0
-    for(let i=0;i<arr2.length;i++){
-        for(let j=0;j<arr1.length;j++){
-            if(arr2[i]==arr1[j]){
-                arr2[i]=-1
-                count++
-                break;
-            }
-        }
-    }
-    return count
-}
-console.log(checkarray(arr1,arr2))
+// let arr1=[2,5,7,9,12]
+// let arr2=[1,2,3]
+// function checkarray(arr1,arr2){
+//     let count=0
+//     for(let i=0;i<arr2.length;i++){
+//         for(let j=0;j<arr1.length;j++){
+//             if(arr2[i]==arr1[j]){
+//                 arr2[i]=-1
+//                 count++
+//                 break;
+//             }
+//         }
+//     }
+//     return count
+// }
+// console.log(checkarray(arr1,arr2))
 
 
 

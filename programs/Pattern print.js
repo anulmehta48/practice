@@ -23,7 +23,7 @@
 // ****
 // ***
 // **
-// *
+// // *
 // function printLesftStar(n){
 //     let result=""
 //     for(let i=0;i<=n;i++){
@@ -131,20 +131,20 @@
 //  *******
 // *********
 
-// function PyramidPrint(n){
-//     let result=""
-//     for(let i=1;i<=n;i++){
-//         for(let j=1;j<=n-i;j++){
-//             result+=" "
-//         }
-//         for(k=0;k<2*i-1;k++){
-//             result+="*"
-//         }
-//         result+="\n"
-//     }
-//     return result
-// }
-// console.log(PyramidPrint(5))
+function PyramidPrint(n){
+    let result=""
+    for(let i=1;i<=n;i++){
+        for(let j=1;j<=n-i;j++){
+            result+=" "
+        }
+        for(k=0;k<2*i-1;k++){
+            result+="*"
+        }
+        result+="\n"
+    }
+    return result
+}
+console.log(PyramidPrint(5))
 
 //Reverse pyramid pattern
 

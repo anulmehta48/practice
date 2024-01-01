@@ -7,13 +7,12 @@
 
 
 //Array Methods:-**
-//1. toString() :- tostring is used for converting in string with comma separated values (",")
+//1. toString() :- tostring is used for converting in string value with comma separated values (",") and number into string 
 //example:-
 // let myArray=["kamal","hement",25,10,[2,"a",[1,2,3]]]
 // let a=myArray.toString()
 // console.log(a)
-// console.log(typeof myArray)
-
+// console.log(typeof a)
 
 //2. join() :- join is used for separated the array element with some specific symbols like(,*,-,+,$,&)
 //example:-
@@ -77,10 +76,10 @@
 // let myArray=["kamal","hement","rahul","anul","hhh"]
 // let a=myArray.splice(2) //now this line first two elements(0,1) be stay here in original array and remaining element are deleted  from array  and add in another array 
 // console.log(a)
-// console.log(myArray) // now this is print deleted array elements
+// console.log(myArray) // now this is original array with data with given value (0,1)
 
 // let myArray=["kamal","hement","rahul","anul","hhh"]
-// let a=myArray.splice(2,1) //now this line go in index 2 and delete one element form array and add in another array 
+// let a=myArray.splice(2,1) //now this line go in index 2 and delete one element form array return deteted element in new array
 // console.log(a)
 // console.log(myArray) // now this is print reamining rest array elements
 
@@ -94,7 +93,7 @@
 //9. slice() :- slice is used for takes the elements form the array and create the new array with tooked elemets but not removed from oringinal array
 //              and it take 1 or 2 argument :like-(1,5) starting from 1 argument but not including last 5 argument it take values from(1,2,3,4)
 // example:-
-let myArray=["kamal","hement","rahul","anul","hhh"]
+// let myArray=["kamal","hement","rahul","anul","hhh"]
 // let a=myArray.slice(1)// this is detetd first 1 element and give all rest elements another new array
 // let b=myArray.slice(1,4) // if i used the line it start from index 1 to index 3 elements gives you it is not include last or second parameter
 // let c=myArray.slice(3)  //if you used this line then it start from 3 and gives you all rest element of array
@@ -115,7 +114,7 @@ let myArray=["kamal","hement","rahul","anul","hhh"]
 // let points = [40, 100, 1, 5, 25, 10];
 // let k=points.sort()
 // console.log(k)
-// // let a=points.sort(function(a, b){return a - b});
+// let a=points.sort(function(a, b){return a - b});/
 // let a=points.sort((a, b)=> a - b);
 // console.log(a)
 
@@ -127,25 +126,8 @@ let myArray=["kamal","hement","rahul","anul","hhh"]
 // let a=myArray.reverse()
 // console.log(a)
 
-// let points = [40, 100, 1, 5, 25, 10];
+// let points = ["kamal","hement","rahul","anul","hhh"];
 // let k=points.reverse()
 // console.log(k)
 
-
-//var let const
-
-// console.log(x)
-
-// var x;
-
-
-// forvar()
-
-
-// var forvar=()=>{
-//     var x=20
-//     var x=50
-//     console.log(x)
-// }
-// console.log(window.forvar)
 

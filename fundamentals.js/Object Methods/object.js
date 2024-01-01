@@ -52,7 +52,7 @@
 //     age:"25",
 //     department:"state"
 // }
-// // one by one only change like this-
+// one by one only change like this-
 // let NewObject={}
 // NewObject["Anul"]="name"
 // console.log(NewObject)
@@ -111,13 +111,13 @@
 // console.log(stringArray)
 
 
-//REST Parameter=> this is oppiste of spared and it is passed in paramer 
+//REST Parameter=> this is oppiste of spared and it is passed in parameter
 // 1. way of rest
 // const [firstTool, ...rest] = ['hammer', 'screwdriver', 'wrench']
 
 // console.log(firstTool)
 // console.log(rest)
-// // 2. way of rest
+// 2. way of rest
 
 // function restTest(...args) {
 //     console.log(args)

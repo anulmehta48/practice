@@ -23,7 +23,7 @@
 // console.log(Insertion(arr))
 
 
-// let arr=[2,5,7,4,9,2,1]
+let arr=[2,5,7,4,9,2,1]
 
 function Insertionsort(arr){
     for(let i=1;i<arr.length;i++){

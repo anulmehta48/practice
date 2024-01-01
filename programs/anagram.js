@@ -8,21 +8,21 @@
 // let str1=["h","e","l","l","o"]
 // let str2=["o","l","l","e","h"]
 // function AnaGrams(str1,str2){
-//     //get length of both string is same
+    //get length of both string is same
 //    let n1=str1.length
 //    let n2=str2.length
-//    //if both string do not have same length
-//    //then these string are not anagram
+   //if both string do not have same length
+   //then these string are not anagram
 //    if(n1!==n2){
 //     return false
 //    }
-//    //sort the both string
+   //sort the both string
 //    let a=str1.sort()
 //    console.log(a)
 //     let b=str2.sort()
 //    console.log(b)
 
-//   // compare both string are same or not
+  // compare both string are same or not
 //    for(let i=0;i<n1;i++){
 //     if(str1[i] !=str2[i]){
 //         return false
@@ -31,7 +31,7 @@
 //    return true
 // }
 // console.log(AnaGrams(str1,str2))
-// // here TC is O(nlogn)
+// here TC is O(nlogn)
 
 
 

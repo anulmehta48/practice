@@ -20,7 +20,7 @@
 // }
 // console.log(mergetwoarray(arr1,arr2))
 
-// using concate  merge two array in soted order
+// using concate  merge two array and used sort method for makes in soted order
 // let arr1=[5,3,6,1,4,2];
 // let arr2=[12,18,11,9,7]
 // let newArray=arr1.concat(arr2).sort((a,b)=>a-b)
@@ -28,8 +28,8 @@
 
 //merge two sorted array in one new array
 //this is important questions *****
-let arr1 = [2,5,6,3,5];
-let arr2 = [1,8,6,14,9];
+// let arr1 = [2,5,6,3,5];
+// let arr2 = [1,8,6,14,9];
 
 function mergetwoarray(arr1,arr2,){
     let n=arr1.length;

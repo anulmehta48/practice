@@ -14,6 +14,7 @@ x()
 
 //print the time seconds using setiTimeout using var variable  like 1,2,3,4,5 
 
+
 // function x(){
 //     for(var i=1;i<=5;i++){
 //         function close(i){

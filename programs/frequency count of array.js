@@ -123,3 +123,6 @@
 // }
 // console.log(freqName(arr1,arr2))
 
+
+
+

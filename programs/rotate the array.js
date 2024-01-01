@@ -46,7 +46,6 @@ function rotateArray(arr,i,j){
         i++;
         j--;
     }
-    
     return arr
 }
 rotateArray(arr,0,arr.length-1)// reverse complete all array

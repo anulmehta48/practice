@@ -12,7 +12,7 @@ function same(arr1,arr2){
     }
     for(let i=0;i<arr1.length;i++){
         console.log(i)//this is for for loop iteration one by one 
-        let correctIndex=arr2.indexOf(arr1[i]**2) //this line check where is square element index is present and return index if not then -1 
+        let correctIndex=arr2.indexOf(arr1[i]**2) //this line check where is square element index is present in the array  and if yes return index if not then return -1 
         console.log(correctIndex)//this is for index of square element
         if(correctIndex ==-1){
             return false
@@ -23,7 +23,7 @@ function same(arr1,arr2){
     return true
 }
 console.log(same(arr1,arr2))
-// // this is sloved but TC is O(n^2)
+// this is sloved but TC is O(n^2)
 
 
 //****BEST WAY TO SOLVE THE PROBLEM**************//
@@ -43,7 +43,7 @@ console.log(same(arr1,arr2))
 //         freqCounter2[val]=(freqCounter2[val]||0)+1
 //     }
 //     for(let key in freqCounter1){
-//         // console.log(key)
+        // console.log(key)
 //         if(!(key**2 in freqCounter2)){
 //             return false
 //         }
