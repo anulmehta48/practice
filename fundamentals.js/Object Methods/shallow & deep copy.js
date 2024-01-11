@@ -172,7 +172,7 @@
 
 // console.log(firstTool)
 // console.log(rest)
-// // 2. way of rest
+// 2. way of rest
 
 // function restTest(...args) {
 //     console.log(args)
@@ -191,18 +191,21 @@
 //   department:"software"
 // }
 
+//1st way
 // let newObject={}
 // newObject['anul']='name'
 // newObject['24']='age'
+// console.log(newObject);
 
+//2nd way
 // let newObject={}
 // Object.entries(myObject).forEach(entry=>{
+//     // console.log(entry);
 //   let key=entry[0]
 //   let value=entry[1]
 //   newObject[value]=key
   
 // })
-
 // console.log(newObject)
 
 

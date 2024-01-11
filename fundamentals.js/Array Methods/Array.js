@@ -1,5 +1,5 @@
-// What is Array = Array is the special Variable that can store many types of Values.
-// What is return = It is Return Array of list and type is Objet
+// What is Array = Array is the special Variable object that can store many types of Values.
+// What is return = It is Return Array of list and type is Object
 // what is syntax = []
 //example:
 // let myArray=["kamal","hement",25,10,{"name":"anul"},[2,"a",[1,2,3]]]
@@ -29,6 +29,9 @@
 // let yourArray2=["new","elements","klpj"]
 // let newArray=myArray.concat(yourArray ,yourArray2)
 // console.log(newArray)
+// let newFlateArray=newArray.flat(Infinity) //It will combiend all array into one single array
+// console.log(newFlateArray);
+
 
 
 
@@ -90,14 +93,18 @@
 
 
 
-//9. slice() :- slice is used for takes the elements form the array and create the new array with tooked elemets but not removed from oringinal array
-//              and it take 1 or 2 argument :like-(1,5) starting from 1 argument but not including last 5 argument it take values from(1,2,3,4)
+//9. slice() :- slice is used for takes the elements form the Original array and create the new array with tooked elemets but not removed from oringinal array
+//              and it take 1 or 2 argument :like-(0,5) starting from 1 argument but not including last 5 argument it take values from(0,1,2,3,4,5)
+//              if we gives only 1 argument then it will deleted given argument element and return rest all remaining elements.
+//              but if we give two argument then it will deteted given argument element and return aslo deleted element that we want to delete that means it will
+//              Not delete given arunmets but it will delete all others elemets accept given arguments.
+//              these two point is very important       
 // example:-
 // let myArray=["kamal","hement","rahul","anul","hhh"]
-// let a=myArray.slice(1)// this is detetd first 1 element and give all rest elements another new array
-// let b=myArray.slice(1,4) // if i used the line it start from index 1 to index 3 elements gives you it is not include last or second parameter
-// let c=myArray.slice(3)  //if you used this line then it start from 3 and gives you all rest element of array
-// console.log(a)
+// let a=myArray.slice(1)// this is detetd 0th index element and give all rest elements another new array.[0,1] so it not include 1 and it delete given argument and return rest all elements.
+// let b=myArray.slice(1,4) // if i used the line it start from index 1 to index 3 elements gives you it is not include last or second parameter and return deleted elemets
+// let c=myArray.slice(1)  //if you used this line then it start from 3 and gives you all rest element of array
+console.log(a)
 // console.log(b)
 // console.log(c)
 // console.log(myArray)
@@ -126,7 +133,7 @@
 // let a=myArray.reverse()
 // console.log(a)
 
-// let points = ["kamal","hement","rahul","anul","hhh"];
+// let points = [40, 100, 1, 5, 25, 10];
 // let k=points.reverse()
 // console.log(k)
 

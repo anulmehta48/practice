@@ -26,7 +26,7 @@
 
 // let str = "Apple, Banana, Kiwi"; //here all values in one string so here lenth is 19
 // // let part = str.slice(7, 13);
-// let part = str.slice(7);//If you not give the second parameter, the method will slice out the rest of the string:
+// let part = str.slice(7);//If you not give the second parameter, the method will slice out the rest of the string from 6th index to all length
 // console.log(part)
 
 // substring() is similar to slice().
@@ -55,8 +55,8 @@
 // console.log(newText)
 
 // To replace case insensitive, use a regular expression with an /i flag (insensitive):
-// let text = "Please visit Microsoft!";
-// let newText = text.replace(/MICROSOFT/i, "W3Schools");
+// let text = "Please visit Microsoft! Microsoft";
+// let newText = text.replace(/MICROSOFT/ig, "W3Schools");
 // console.log(newText)
 
 //4. concat() :- concat used for joined two or more string with existing string 
