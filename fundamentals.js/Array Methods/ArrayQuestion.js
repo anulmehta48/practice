@@ -6,7 +6,6 @@
 // console.log(arr);
 // console.log(arr1);
 
-
 //How do you access the first and last element from array.
 // let arr=[2,5,8,6,7,1,3]
 // let firstElement=arr[0] //first index element
@@ -16,7 +15,6 @@
 // let lastElement=arr[arr.length-1] //last index element
 // console.log(lastElement);
 
-
 //How do you remove the last element from array.
 // let arr=[2,5,8,6,7,1,3]
 // let lastElement=arr.pop() //pop remove last element and return removed element of array
@@ -24,17 +22,15 @@
 
 //How do you add an element of end of the array
 // let arr=[2,5,8,6,7,1,3]
-// arr.push(10) //push add the element into last index and return new length of array 
+// arr.push(10) //push add the element into last index and return new length of array
 // console.log(arr);
 
-
-//How do you remove first element of array 
+//How do you remove first element of array
 // let arr=[2,5,8,6,7,1,3]
 // arr.shift() //shift remove the first element of array and return removed element
 // console.log(arr);
 
-
-//How do you add first element of array 
+//How do you add first element of array
 // let arr=[2,5,8,6,7,1,3]
 // arr.unshift(10) //unshift add the first element of array and new length of arry
 // console.log(arr);
@@ -89,7 +85,6 @@
 // }
 // console.log(checkElement(arr,target))
 
-
 //How do you find the index of an element of array
 // let arr=[2,5,8,6,7,1,3,"Anul","KOTA"]
 // let target=6
@@ -110,7 +105,6 @@
 // }
 // console.log(findIndex(arr,target));
 
-
 //splice vs slice
 //splice => it is used for add delete and update in same array
 //slice => It is used for delete in duplicate array
@@ -119,24 +113,21 @@
 // let arrA=[1,2,6,3]
 // let arrB=arrA
 // arrB.pop()
-// console.log(arrA); 
+// console.log(arrA);
 // console.log(arrB);
-
 
 //Deep copy =>In Deep copy when we copy the value in another array then it will copy exact new Array so when we changes in one it will refected in only one.
 // let arrA=[1,2,6,3]
 // let arrB=[...arrA]
 // arrB.pop()
-// console.log(arrA); 
+// console.log(arrA);
 // console.log(arrB);
-
 
 //concat array
 // let arrA=[1,2,6,3]
 // let arrB=[5,5,6,8]
 // let newArray=arrA.concat(arrB)
-// console.log(newArray); 
-
+// console.log(newArray);
 
 // let arr=[2,5,5,[2,5,[1,2]],8,9]
 // let newArray=arr.flat(2) // here 2 use for flat 2 inside array
@@ -145,4 +136,49 @@
 // let arr=[2,3,4,[2,5,7],[2,3,4,5,6]]
 // let newArray=arr.flat(Infinity) //here Infinity use for flat all inside array
 // console.log(newArray);
+
+// Two sum or sum of two element and return the index of those element or Pair sum
+// let arr = [3,2,4];
+// let target = 6;
+
+// function TwoSum(arr, target) {
+//     arr.sort((a,b)=>a-b)
+//   let i = 0;
+//   let j = arr.length - 1;
+//   while (i < j) {
+//     if (arr[i] + arr[j] === target) {
+//       return [i,j]
+//     } else if (arr[i] + arr[j] < j) {
+//       i++;
+//     } else {
+//       j--;
+//     }
+//   }
+//   return 0;
+// }
+// console.log(TwoSum(arr, target));
+
+
+let arr = [3, 2, 4];
+let target = 6;
+
+function TwoSum(arr, target) {
+  const numIndices = new Map();
+
+  for (let i = 0; i < arr.length; i++) {
+      const complement = target - arr[i];
+      
+      if (numIndices.has(complement)) {
+          return [numIndices.get(complement), i];
+        }
+        
+        numIndices.set(arr[i], i);
+        console.log(numIndices);
+    }
+    
+  return 0;
+}
+
+console.log(TwoSum(arr, target));
+
 
