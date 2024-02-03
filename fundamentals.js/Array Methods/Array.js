@@ -7,7 +7,7 @@
 
 
 //Array Methods:-**
-//1. toString() :- tostring is used for converting in string value with comma separated values (",") and number into string 
+//1. toString() :- tostring is used for converting in string typed values.  
 //example:-
 // let myArray=["kamal","hement",25,10,[2,"a",[1,2,3]]]
 // let a=myArray.toString()
@@ -63,7 +63,7 @@
 // console.log(a)
 
 
-//8.splice() :- splice is used for insert,delete,and update the elements in the array and it is return the deleted element of array every time but you want 
+//8.splice() :- splice is used for insert,delete,and update the elements in the array and it is return the deleted element of array always but you want 
 //              see added,deleled,updated array so you have to console the original array once again because it performed the operation in original array
 //              it is takes 3 parameter :
 //              first:- where you want to add ,delete,update (index)
@@ -77,7 +77,7 @@
 
 
 // let myArray=["kamal","hement","rahul","anul","hhh"]
-// let a=myArray.splice(2) //now this line first two elements(0,1) be stay here in original array and remaining element are deleted  from array  and add in another array 
+// let a=myArray.splice(2) //now this line first two elements(0,1) be stay here in original array and remaining all element are deleted  from array  and add in another array 
 // console.log(a)
 // console.log(myArray) // now this is original array with data with given value (0,1)
 
@@ -94,17 +94,17 @@
 
 
 //9. slice() :- slice is used for takes the elements form the Original array and create the new array with tooked elemets but not removed from oringinal array
-//              and it take 1 or 2 argument :like-(0,5) starting from 1 argument but not including last 5 argument it take values from(0,1,2,3,4,5)
+//              and it take 1 or 2 argument :like-(0,5) starting from 1st argument but not including last 2nd argument it take values from(0,1,2,3,4)
 //              if we gives only 1 argument then it will deleted given argument element and return rest all remaining elements.
 //              but if we give two argument then it will deteted given argument element and return aslo deleted element that we want to delete that means it will
 //              Not delete given arunmets but it will delete all others elemets accept given arguments.
 //              these two point is very important       
 // example:-
 // let myArray=["kamal","hement","rahul","anul","hhh"]
-// let a=myArray.slice(1)// this is detetd 0th index element and give all rest elements another new array.[0,1] so it not include 1 and it delete given argument and return rest all elements.
-// let b=myArray.slice(1,4) // if i used the line it start from index 1 to index 3 elements gives you it is not include last or second parameter and return deleted elemets
-// let c=myArray.slice(1)  //if you used this line then it start from 3 and gives you all rest element of array
-console.log(a)
+// let a=myArray.slice(1)// this is detetd 0th index element and give all rest elements  in another new array. Here is counting like  [0,1] so it not include 1 and it delete given argument and return rest all elements.
+// let b=myArray.slice(1,4) // if i used this line then it start from index 1 to index 3 elements gives you between elements and delete rest others element.
+// let c=myArray.slice(3) //this is delete 0 1 2 index element and give all rest elements in another new array.
+// console.log(a)
 // console.log(b)
 // console.log(c)
 // console.log(myArray)

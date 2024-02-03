@@ -18,7 +18,7 @@
 // SC-O(1)
 
 
-//herewe apply two pointer approach but it only apply on sorted array so that why first remember array must be in order
+//herewe apply two pointer approach but it only apply on sorted array so that why first remember array must be in sorted order
 //if using this output not matching that means you answer is made by unsorted array so two pointer here not work because 
 // it make the array in sorted order
 // function PairSum(arr, k) {
@@ -42,24 +42,21 @@
 
 
 // now using map we optimzie solution in o(n)   
-// let arr = [3, 2, 4];
-// let target = 6;
+let arr = [3, 2, 4];
+let target = 6;
 
-// function TwoSum(arr, target) {
-//   const numIndices = new Map();
-
-//   for (let i = 0; i < arr.length; i++) {
-//       const complement = target - arr[i];
-      
-//       if (numIndices.has(complement)) {
-//           return [numIndices.get(complement), i];
-//         }
-//         numIndices.set(arr[i], i);
-//     }
-//   return 0;
-// }
-
-// console.log(TwoSum(arr, target));
+function TwoSum(arr, target) {
+  const mp = new Map();
+  for (let i = 0; i < arr.length; i++) {
+      const value = target - arr[i];
+      if (mp.has(value)) {
+          return [mp.get(value), i];
+        }
+        mp.set(arr[i], i);
+    }
+  return 0;
+}
+console.log(TwoSum(arr, target));
 //O(n)
 
 

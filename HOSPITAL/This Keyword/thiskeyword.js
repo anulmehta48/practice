@@ -84,28 +84,146 @@
  *8 In Class Constructor in OOPs in Diffrent values of this keyword.
         
  * */
-"use strict";
+// "use strict";
 
-const student = {
-  firstName: "Anul",
-  lastName: "Mehta",
-};
-const printFullName = (hometown, state) => {
-  console.log(
-    this.firstName + " " + this.lastName + " from " + hometown + " of " + state
-  );
-  console.log(this);
-};
+// const student = {
+//   firstName: "Anul",
+//   lastName: "Mehta",
+// };
+// const printFullName = (hometown, state) => {
+//   console.log(
+//     this.firstName + " " + this.lastName + " from " + hometown + " of " + state
+//   );
+//   console.log(this);
+// };
 
-const studen2 = {
-  firstName: "Mohit",
-  lastName: "Gupta",
-};
-printFullName.call(student, "kota", "rajsthan");
-// newFun()
+// const studen2 = {
+//   firstName: "Mohit",
+//   lastName: "Gupta",
+// };
+// printFullName.call(student, "kota", "rajsthan");
+// // newFun()
 
-//  const printName=function (name,age){
-//     console.log(name,age)
-//  }
+// //  const printName=function (name,age){
+// //     console.log(name,age)
+// //  }
 
-//  printName
+// //  printName
+
+// ********************************
+
+// const obj={
+//   name:"Anul Mehta",
+//   age:25,
+//   printFullName:function(){
+//     console.log(this.name);
+//   }
+// }
+// // obj.printFullName()
+
+// const obj2={
+//   name:"Mohit Gupta",
+//   age:25,
+// }
+
+// // using call() we borrowing function from another object that is called function borrowing
+// obj.printFullName.call(obj2)
+
+// but now as we go head in deep then we not put our function indide in any object we keep it secure and outside of functions
+// normal we giving here example so we can understood
+
+// const obj = {
+//   name: "Anul Mehta",
+//   age: 25,
+// };
+
+// const obj2 = {
+//   name: "Mohit Gupta",
+//   age: 25,
+// };
+
+// // this is may any fuction for requirment uscase now how we use these function in any where
+// const printFullName = function () {
+//   console.log(this.name);
+// };
+
+// printFullName.call(obj) //we use for obj
+// printFullName.call(obj2) //we use for obj2
+
+
+
+
+
+// ***************************************************************************
+//  if we have mutliple parameter or arguments then how we using in call
+// const obj = {
+//   name: "Anul Mehta",
+//   age: 25,
+// };
+
+// const obj2 = {
+//   name: "Mohit Gupta",
+//   age: 25,
+// };
+
+// // this is may any fuction for requirment uscase now how we use these function in any where
+// const printFullName = function (hometown,state) {
+//   console.log(this.name +" "+ hometown +" ,"+ state);
+// };
+
+// printFullName.call(obj,"Kota","Rajasthan") //we use for obj
+// printFullName.call(obj2,"bundi","Uatterpradesh") //we use for obj2
+
+// // *******************************************************************************************
+// //  if we have mutliple parameter or arguments then how we using in apply
+// //  the only diffrence of apply method we passed arguments in  [] that it because apply method take argument in object and array is object in javascript.
+// const obj = {
+//   name: "Anul Mehta",
+//   age: 25,
+// };
+
+// const obj2 = {
+//   name: "Mohit Gupta",
+//   age: 25,
+// };
+
+// // this is may any fuction for requirment uscase now how we use these function in any where
+// const printFullName = function (hometown,state) {
+//   console.log(this.name +" "+ hometown +" ,"+ state);
+// };
+
+// printFullName.apply(obj,["Kota","Rajasthan"]) //we use for obj
+// printFullName.apply(obj2,["bundi","Uatterpradesh"]) //we use for obj2
+
+
+
+// *******************************************************************************************
+//  Bind is just like call method but only diffrence is inside call we direclty call the function but inside
+//  in bind we not call the function direclty because bind method bindes the our methods with object and return the copy of that method that is function
+//  so when we have to call that function then we store in varible and then called new variable that is returned function.
+//  And apply not takes argument in [] we pass normally as an like call method
+// const obj = {
+//   name: "Anul Mehta",
+//   age: 25,
+// };
+
+// const obj2 = {
+//   name: "Mohit Gupta",
+//   age: 25,
+// };
+
+// // this is may any fuction for requirment uscase now how we use these function in any where
+// const printFullName = function (hometown,state) {
+//   console.log(this.name +" "+ hometown +" ,"+ state);
+// };
+
+// const myfun=printFullName.bind(obj,"Kota","Rajasthan") //we use for obj
+// myfun()
+// const myfun2=printFullName.bind(obj2,"bundi","Uatterpradesh") //we use for obj2
+// myfun2()
+let my=window.document.all
+if(my){
+  console.log("hello");
+}else{
+  console.log("bye");
+}

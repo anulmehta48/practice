@@ -1,23 +1,23 @@
 //Only return unique all element or print atleast one time occurr element
 // let arr=[1,2,2,3,3,3,3,4,4,4,4,5,6,8,9]
 
-// function uniqueAll(arr){
-//     let result=[]
-//     for(let i=0;i<arr.length;i++){
-//         let isUnique=true;
-//         for(let j=0;j<result.length;j++){
-//             if(arr[i]===result[j]){
-//                 isUnique=false;
-//                 break
-//             }
-//         }
-//         if(isUnique){
-//             result.push(arr[i])
-//         }
-//     }
-//     return result
-// }
-// console.log(uniqueAll(arr));
+function uniqueAll(arr){
+    let result=[]
+    for(let i=0;i<arr.length;i++){
+        let isUnique=true;
+        for(let j=0;j<result.length;j++){
+            if(arr[i]===result[j]){
+                isUnique=false;
+                break
+            }
+        }
+        if(isUnique){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+console.log(uniqueAll(arr));
 
 //using frquency counter
 // let arr=[1,2,2,3,3,3,3,4,4,4,4,5,6,8,9]

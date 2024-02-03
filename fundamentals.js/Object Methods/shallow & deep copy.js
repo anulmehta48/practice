@@ -1,4 +1,4 @@
-//! what is Shallow copy =>
+//! what is Shallow copy =>  
 //this is normal object and we are copy one object value in another object
 //here we are doing normal copy so that is copy the refrence address of object that is called call by reference
 //so that when you change in one object it reflected in another object also beacuse here object same referece address(memory) are copied happens
@@ -48,7 +48,7 @@
 // console.log(user) //mohan
 
 
-//*now we have multile level objects then how we can do things but some problem in both Object.assign({},obj) and spread(...) here that is 
+//*now we have multile level objects then how we can do things but same problem in both Object.assign({},obj) and spread(...) here that is 
 
 // let obj={
 //     name:"anul",
