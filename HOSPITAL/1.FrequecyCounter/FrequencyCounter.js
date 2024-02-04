@@ -1,0 +1,1 @@
+//Frequecy counter method => 
