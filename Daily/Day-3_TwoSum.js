@@ -36,21 +36,43 @@
 // console.log(twoSum(arr,target));
 // TC-O(n)
 
+// let arr = [2, 8, 6, 4, 3, 5];
+// let target = 11;
+// // using two pointer approach but it is only apply on sorted array or incresing order
+// //and  we do not have sorted array so we can use it in a diffrent way using map
+// function twoSum(arr, target) {
+//   let mp = new Map();
+//   for (let i = 0; i < arr.length; i++) {
+//     let value = target - arr[i];
+//     if (mp.has(value)) {
+//       return [mp.get(value), i];
+//     } else {
+//       mp.set(arr[i], i);
+//     }
+//   }
+//   return 0;
+// }
+// console.log(twoSum(arr, target));
+// TC-O(n)
+
+
 let arr = [2, 8, 6, 4, 3, 5];
 let target = 11;
 // using two pointer approach but it is only apply on sorted array or incresing order
 //and  we do not have sorted array so we can use it in a diffrent way using map
 function twoSum(arr, target) {
   let mp = new Map();
+  let result=[]
   for (let i = 0; i < arr.length; i++) {
     let value = target - arr[i];
     if (mp.has(value)) {
-      return [mp.get(value), i];
+      result.push([mp.get(value), i])
     } else {
       mp.set(arr[i], i);
     }
   }
-  return 0;
+  return result
 }
 console.log(twoSum(arr, target));
 // TC-O(n)
+
