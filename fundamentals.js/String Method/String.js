@@ -1,4 +1,4 @@
-// What is String = String is the Variable that can store String types of Values.
+// What is String = String is the type of the Variable that can store String types of Values.
 // What is return = It is Return string
 // what is syntax = ""
 //example:
@@ -6,12 +6,18 @@
 // console.log(myString)
 // console.log(typeof myString)
 
+// we can create String as a constructor using new keyword but this time it is an object like this
+// let myString=new String("hello my Duniya")
+// console.log(myString)
+// console.log(typeof myString)
+
+
 
 // Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).
 // But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
 
 //String Methods**:-
-//1. length :- length is used for count the length of strings values
+//1. length :- length is used for count the length of strings values that total number of element are there including space
 //example:-
 // let myString="hello my Duniya" // space is also counted
 // let a=myString.length
@@ -19,14 +25,13 @@
 
 
 //2.There are 3 methods for extracting a part of a string:
-
-// slice(start, end)
+// slice(start, end) => It is use for take out stings elements from all elments 
 // substring(start, end)
 // substr(start, length)
 
-// let str = "Apple, Banana, Kiwi"; //here all values in one string so here lenth is 19
-// // let part = str.slice(7, 13);
-// let part = str.slice(7);//If you not give the second parameter, the method will slice out the rest of the string from 6th index to all length
+let str = "Apple Banana Kiwi"; //here all values in one string so here lenth is 19
+// let part = str.slice(7, 13); //start with first argument but not inclued the last arguments
+// let part = str.slice(7);//If you not give the second parameter, the method will slice out the rest of the string from 7th index to all length
 // console.log(part)
 
 // substring() is similar to slice().
