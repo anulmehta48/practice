@@ -7,6 +7,130 @@
 
 
 //Array Methods:-**
+// 1.push()=> It Add one or more elements to the end of the array and return new length of the array
+//          It takes the value direct in push method but if you pass using [] then it add it like one element of all values.
+
+//example:-
+// let arr=[2,4,6,8,10,12]
+// let result=arr.push(16)
+// console.log(result);
+// console.log(arr);
+
+// let arr=[2,4,6,8,10,12]
+// let result=arr.push(16,18)
+// console.log(result);
+// console.log(arr);
+
+// let arr=[2,4,6,8,10,12]
+// let result=arr.push([16,18])
+// console.log(result);
+// console.log(arr);
+
+// let arr=[2,4,6,8,10,12]
+// let result=arr.push()
+// console.log(result);
+// console.log(arr);
+
+
+// 2.pop()=> It Removes the last element from an array and returns removed element.
+//           It not take any arguments if you pass then nothing will happen it directly only removed one element form last index
+//example:-
+// let arr=[2,4,6,8,10,12]
+// let result=arr.pop()
+// console.log(result);
+// console.log(arr);
+
+// let arr=[2,4,6,8,10,12]
+// let result=arr.pop()
+// console.log(result);
+// console.log(arr);
+
+
+//3.unshift()=> Adds one or more elements to the beginning of an array and returns the new length of the array.
+//             It takes the value direct in unshift method but if you pass using [] then it add it like one element of all values.
+ //example:-
+// let arr=[2,4,6,8,10,12]
+// let result=arr.unshift(100)
+// console.log(result);
+// console.log(arr);
+
+// let arr=[2,4,6,8,10,12]
+// let result=arr.unshift(100,200)
+// console.log(result);
+// console.log(arr);
+
+// let arr=[2,4,6,8,10,12]
+// let result=arr.unshift([100,200])
+// console.log(result);
+// console.log(arr);
+
+// let arr=[2,4,6,8,10,12]
+// let result=arr.unshift()
+// console.log(result);
+// console.log(arr);
+
+
+
+// 4.shift()=>It Removes the first element from an array and returns that element. This operation also shifts other elements to lower indices.
+//           It not take any arguments if you pass then nothing will happen it directly only removed one element form last index
+// example:-
+// let arr=[2,4,6,8,10,12]
+// let result=arr.shift()
+// console.log(result);
+// console.log(arr);
+
+
+// let arr=[2,4,6,8,10,12]
+// let result=arr.shift(4)
+// console.log(result);
+// console.log(arr);
+
+
+
+// JavaScript provides a variety of methods that you can use with arrays to perform different operations efficiently. Here's a list of some commonly used array methods in JavaScript:
+
+// push(): Adds one or more elements to the end of an array and returns the new length of the array.
+
+// pop(): Removes the last element from an array and returns that element.
+
+// shift(): Removes the first element from an array and returns that element. This operation also shifts other elements to lower indices.
+
+// unshift(): Adds one or more elements to the beginning of an array and returns the new length of the array.
+
+// concat(): Returns a new array comprised of this array joined with other arrays and/or values.
+
+// slice(): Returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array.
+
+// splice(): Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
+// indexOf(): Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+// lastIndexOf(): Returns the last index at which a given element can be found in the array, or -1 if it is not present.
+
+// forEach(): Executes a provided function once for each array element.
+
+// map(): Creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+// filter(): Creates a new array with all elements that pass the test implemented by the provided function.
+
+// reduce(): Apply a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.
+
+// reduceRight(): Apply a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.
+
+// find(): Returns the value of the first element in the array that satisfies the provided testing function. Otherwise, it returns undefined.
+
+// findIndex(): Returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1.
+
+// some(): Checks if at least one element in the array satisfies the provided testing function.
+
+// every(): Checks if all elements in the array satisfy the provided testing function.
+
+// includes(): Determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+
+// sort(): Sorts the elements of an array in place and returns the sorted array.
+
+// reverse(): Reverses the order of the elements of an array in place.
+//Array Methods:-**
 //1. toString() :- tostring is used for converting in string typed values.  
 //example:-
 // let myArray=["kamal","hement",25,10,[2,"a",[1,2,3]]]
@@ -35,18 +159,8 @@
 
 
 
-//4. pop() :- pop is used for remove one element from last index in the array and return the poped element
-// example:-
-// let myArray=["kamal","hement",25,10,{"name":"anul"},[2,"a",[1,2,3]]]
-// let a=myArray.pop()
-// console.log(a)
 
 
-//5. push() :- push is used for add the new element in the array in last index of the array and return the new length of the array
-// example:-
-// let myArray=["kamal","hement",25,10,{"name":"anul"},[2,"a",[1,2,3]]]
-// let a=myArray.push("hello")
-// console.log(a)
 
 
 //6. shift() :- shift is used for remove the one element from first index of the array and return shifted element
@@ -55,12 +169,6 @@
 // let a=myArray.shift()
 // console.log(a)
 
-
-//7. unshift() :- unshift is used for add the one element in the first index of the array and return the new length of the array
-// example:-
-// let myArray=["kamal","hement",25,10,{"name":"anul"},[2,"a",[1,2,3]]]
-// let a=myArray.unshift("new")
-// console.log(a)
 
 
 //8.splice() :- splice is used for insert,delete,and update the elements in the array and it is return the deleted element of array always but you want 
