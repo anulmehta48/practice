@@ -153,3 +153,25 @@
 
 // let arr=[2,12,22]
 // arr.concat()
+
+
+// const course={
+//     coursename:"javascript",
+//     price:1000,
+//     instructor:"anul mehta"
+// }
+
+// const {instructor:cName,coursename,price}=course
+// // console.log(instructor);
+// console.log(cName);
+
+
+// const myfun=()=>{
+//     console.log(this);
+// }
+// myfun()
+
+function myfun(){
+    console.log(this);
+}
+myfun()

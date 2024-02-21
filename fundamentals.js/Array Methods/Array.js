@@ -86,6 +86,58 @@
 // console.log(arr);
 
 
+//5 join()=>It will convetred into string and store without []
+// let arr=[2,4,6,8,10,12]
+// let result=arr.join()
+// console.log(typeof result);
+// console.log(arr);
+
+
+//6. slice()=>
+// let arr=[2,4,6,8,10,12]
+// console.log(arr);
+// let result1=arr.slice(1,5)
+// console.log(result1);
+// console.log(arr);
+// let result2=arr.splice(1,3)
+// console.log(result2);
+// console.log(arr);
+
+
+//if we using push to merge two array then it will merge with nested array like
+// let arr1=[1,2,3,4]
+// let arr2=[6,7,8,9]
+// let result=arr1.push(arr2)
+// console.log(result);
+// console.log(arr1);
+
+// let arr1=[1,2,3,4]
+// let arr2=[6,7,8,9]
+// let result=arr1.concat(arr2)
+// console.log(result);
+
+// using spread operator
+// let arr1=[1,2,3,4]
+// let arr2=[6,7,8,9]
+// let arr3=[0]
+// let result=[...arr1,...arr2,...arr3]
+// console.log(result);
+
+// let arr=[6,7,8,9,[2,5,8,,[55,5,2,1,2],55,[5,4]]]
+// let result=arr.flat(Infinity)
+// console.log(result);
+
+// console.log(Array.isArray("Anul"));
+// console.log(Array.from("Anul"));
+// console.log(Array.from({name:"Anul"}));
+
+// const obj = {name: "Anul", age: 30};
+
+// console.log(Array.from(Object.keys(obj))); // Output: ["name", "age"]
+// console.log(Array.from(Object.values(obj))); // Output: ["Anul", 30]
+// console.log(Array.from(Object.entries(obj))); // Output: [["name", "Anul"], ["age", 30]]
+
+
 
 // JavaScript provides a variety of methods that you can use with arrays to perform different operations efficiently. Here's a list of some commonly used array methods in JavaScript:
 
