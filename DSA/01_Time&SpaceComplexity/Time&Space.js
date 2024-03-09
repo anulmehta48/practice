@@ -64,14 +64,79 @@
 //Example -3
 // print AllPair
 
-function PrintAllPair(n){
-    for(let i=0;i<=n;i++){
-        for(let j=0;j<=n;j++){
-            console.log(i,j);
-        }
-    }
-}
-console.log(PrintAllPair(5));
+// function PrintAllPair(n){
+//     for(let i=0;i<=n;i++){
+//         for(let j=0;j<=n;j++){
+//             console.log(i,j);
+//         }
+//     }
+// }
+// console.log(PrintAllPair(5));
 //TC-O(n^2)  =>O(n) * O(n) = O(n^2) =>O(n^2) //nested loop are multiply
 //SC=O(1)
 
+
+//Example-4
+// Number of Half
+
+// function NumberOfHalf(n){
+//     let count=0;
+//     while(n>1){
+//         n=n/2
+//         count++
+//     }
+//     return count
+// }
+// console.log(NumberOfHalf(10));
+//TC-O(logn) => When thing happen half then it will always logerithm so logn
+//SC-O(1)
+
+// Example -5
+// Toatal number of half
+
+// function TotalNumberOfHalf(n){
+//     let total=0;
+//     for(let i=0;i<n;i++){
+//         total=total+NumberOfHalf(n)
+//     }
+//     return total
+// }
+// console.log(TotalNumberOfHalf(10));
+//TC-O(nlogn) => O(n) * (logn) = O(nlogn) //nested and Half
+//SC-O(1) 
+
+
+
+// let A="hello"
+// let B="java"
+// function StringUpperCase(A,B){
+//     let TotalLength=A.length+B.length
+//     let LexComparison=A.localeCompare(B)> 0 ? "Yes" :"No"
+//     let FirstStr=A.substr(0,1).toUpperCase()+A.substr(1)
+//     let SecondStr=B.substr(0,1).toUpperCase()+B.substr(1)
+//     console.log(TotalLength);
+//     console.log(LexComparison);
+//     console.log(FirstStr+" "+SecondStr)
+// }
+// console.log(StringUpperCase(A,B));
+
+
+
+let A="hello"
+let B="java"
+function StringUpperCase(A,B){
+    let TotalLength=A.length+B.length
+    let LexComparison;
+    if(A.localeCompare(B)> 0 ){
+        LexComparison="Yes"
+    }else{
+        LexComparison="No"
+    }
+       
+    let FirstStr=A.substr(0,1).toUpperCase()+A.substr(1)
+    let SecondStr=B.substr(0,1).toUpperCase()+B.substr(1)
+    console.log(TotalLength);
+    console.log(LexComparison);
+    console.log(FirstStr+" "+SecondStr)
+}
+console.log(StringUpperCase(A,B));
