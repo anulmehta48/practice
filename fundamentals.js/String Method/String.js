@@ -1,4 +1,6 @@
-// What is String = String is the type of the Variable that can store String types of Values.
+// What is String = String is the Datatype of the Variable that can store String types of Values.
+//                  A string is a sequence of characters, such as letters, numbers, symbols, or spaces,
+//                  enclosed within single (' ') or double (" ") quotes. Strings are one of the fundamental data types in JavaScript.
 // What is return = It is Return string
 // what is syntax = ""
 //example:

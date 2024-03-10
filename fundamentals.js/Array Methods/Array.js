@@ -8,7 +8,7 @@
 
 //Array Methods:-**
 // 1.push()=> It Add one or more elements to the end of the array and return new length of the array
-//          It takes the value direct in push method but if you pass using [] then it add it like one element of all values.
+//            It takes the value direct in push method but if you pass using [] then it add it like one element of all values.
 
 //example:-
 // let arr=[2,4,6,8,10,12]
@@ -182,6 +182,8 @@
 // sort(): Sorts the elements of an array in place and returns the sorted array.
 
 // reverse(): Reverses the order of the elements of an array in place.
+
+
 //Array Methods:-**
 //1. toString() :- tostring is used for converting in string typed values.  
 //example:-
@@ -296,5 +298,5 @@
 // let points = [40, 100, 1, 5, 25, 10];
 // let k=points.reverse()
 // console.log(k)
-
+ 
 
