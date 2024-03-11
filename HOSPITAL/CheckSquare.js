@@ -1,5 +1,5 @@
 // let arr1 = [4, 2, 8, 5, 3];
-// let arr2 = [25, 64, 9, 4, 16];
+// let arr2 = [16,4,64,25,9];
 
 //brute force apporach 
 //In this Both array elements of squares are having at the same indexs
@@ -20,8 +20,8 @@
 
 
 // But here both array have not the same indexes of elements
-let arr1 = [4, 2, 8, 5, 3];
-let arr2 = [25, 64, 9, 4, 16];
+let arr1 = [4, 2, 8, 5, 3,7];
+let arr2 = [25, 64, 9, 4, 16,49];
 
 function checkSquare(arr1, arr2) {
   if (arr1.length != arr2.length) {

@@ -35,7 +35,7 @@
 
 //todo here we see we got two appoaches and both are different but how we know which one is better or efficent because it also depends 
 //todo if i am running on different diffrent machine so that Time & Space Complexity come itno picture for choose which approach is better or efficient.
-//todo and it is independent of machine and input.
+//todo and now it is independent of machine and input.
 
 
 //! O(1) < O(logn) < O(n) <O(nlogn) < O(n^2) < O(n^3) ..........
