@@ -181,3 +181,6 @@ console.log(checkSquare(arr1, arr2));
 // console.log(checkSquare(arr1, arr2));
 // TC - O(n);
 // SC - O(1);
+// /
+
+
