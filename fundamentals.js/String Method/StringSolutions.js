@@ -14,8 +14,3 @@ console.log(result);
 
 
 
-
-
-// /
-
-// sbs

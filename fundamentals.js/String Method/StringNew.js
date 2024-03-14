@@ -9,7 +9,7 @@
 // let names=new String("Anul")
 // console.log(typeof names);
 
-//Both are same just syntax is diffrents only all properties and method are same
+//Both are same just syntax is diffrents only but all properties and method are same
 
 //Now String Propetries and Method
 //todo How to find total length of string=> length
@@ -59,7 +59,7 @@
 // let name="Anul-Mehta"
 // console.log(name.length);
 // let myResult=name.slice(0,4)
-// let myResult=name.slice(-10) //if use - then it will take length and gives values from revers manner
+// let myResult=name.slice(-10) //if use - then it will take length and gives values from revers manner from last
 // console.log( myResult);
 
 
@@ -106,4 +106,4 @@
 // console.log(myResult);
 
 
-//
+//how to get 
