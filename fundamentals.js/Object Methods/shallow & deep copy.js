@@ -17,7 +17,7 @@
 // ! What is Deep copy =>
 // when we are doing deepcopy of one object into another object then it will copy the all values of original object into copied object
 //but here both object have diffrent diffrent memory address so when we do some changes in any one objects values then it will not reflected 
-// into another objects that is called deep copy because of both have diffrent memory address.
+// into another objects that is called deep copy because of both have diffrent memory address.this is also called called by values.
 
 
 // so how we can do extact copy so that in object has Deep copy method

@@ -6,16 +6,16 @@
 
 
 //Objects Methods** :-
-// const myProfile={
-//     "name":"anul",
-//     "graduation":"btech",
-//     "year":"2020",
-//     "college":"RTU"
-// }
+const myProfile={
+    name:"anul",
+    graduation:"btech",
+    year:"2020",
+    college:"RTU"
+}
 // this is return all details in object form data in key-valie pairs
 // console.log(myProfile)
 
-//these are all return object key ,values, entries in array of[key,value] pair or array forms
+//these are all return object key ,values, entries in array of[key,value] pair in array forms
 // let key=Object.keys(myProfile)
 // console.log(key)
 // let val=Object.values(myProfile)
@@ -24,8 +24,8 @@
 // console.log(entry)
 
 //how can i inseart a key or a value
-//myProfile.address="kota"//this is dot . notaion
-//myProfile['pincode']=324005 // this is object [''] notation
+// myProfile.address="kota"//this is dot . notaion
+// myProfile['pincode']=324005 // this is object [''] notation
 //myProfile.pincode=324005 // this is object  dot. notation
 // console.log(myProfile)
 // myProfile.our-country="india"//this is not work or given error or SyntaxError
@@ -67,7 +67,7 @@
 
 
 
-// destructing => destructing is used to create a variable from any array elements and object properyrs like this -
+// destructing => destructing is used to create a variables for evry array elements for difffrent diffrent varibales and object properyrs like this -
 // using is Array
 // let arr=[25,10,26,22,30]
 // let [a,b,c,d,e]= arr
@@ -171,7 +171,7 @@
 // }
 // myfun()
 
-function myfun(){
-    console.log(this);
-}
-myfun()
+// function myfun(){
+//     console.log(this);
+// }
+// myfun()

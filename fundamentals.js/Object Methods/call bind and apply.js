@@ -57,3 +57,5 @@ let printFullname=function(home,state){
 
 // this is here bind() method 
 
+
+//thuis s
