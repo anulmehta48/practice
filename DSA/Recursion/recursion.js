@@ -1,9 +1,14 @@
-// Tail recursion
-let n=3
-function TailRecursion(n){
+//recurtion => When a function called itself that is called Recursion.
+
+function fun(n){
     if(n>0){
-        TailRecursion(n-1)
         console.log(n);
+        fun(n-1)
     }
 }
-console.log(TailRecursion(n));
+
+function main(){
+    let x=3
+    fun(x)
+}
+console.log(main());
