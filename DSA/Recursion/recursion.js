@@ -1,14 +1,9 @@
-//recurtion => When a function called itself that is called Recursion.
-
-function fun(n){
+// Tail recursion
+let n=3
+function Recursion(n){
     if(n>0){
         console.log(n);
-        fun(n-1)
+        Recursion(n-1)
     }
 }
-
-function main(){
-    let x=3
-    fun(x)
-}
-console.log(main());
+console.log(Recursion(n));
