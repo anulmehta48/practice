@@ -17,7 +17,7 @@
 // console.log(checkSquare(arr1, arr2));
 // TC - O(n)
 // SC - O(n)
-
+//
 
 // But here both array have not the same indexes of elements
 let arr1 = [4, 2, 8, 5, 3,7];
