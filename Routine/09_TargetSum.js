@@ -13,6 +13,9 @@ function TargetSum(arr,target){
             mp.set(arr[i],arr[i]);
         }
     }
+    // if(pairs.length==0){
+    //     return null
+    // }
     return pairs
 }
 console.log(TargetSum(arr,target));
