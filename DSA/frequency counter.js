@@ -1,5 +1,5 @@
-//what is the Frequency Counter= Its is store frequency of each or every elememt that are how many time present in the array
-//so how we can find so go with is apporache:-
+//what is the Frequency Counter= Its is store frequency of each or every elememt that are how many times present in the array
+//so how we can find frequency so go with is apporache:-
 
 //traverse throw the array elements and 
 //count the frequencies
@@ -35,8 +35,8 @@
 
 // now we want to O(n) time or optimized apporach  so we use like this
 //first we have to take a frequncy counter or a empty Object // let freCounter={}  this is called hash or map also.
-//secound we have to itarate the full array this this time which element are founded then we make it 1 frequecy
-// trird check again if next time which elemets are founded if it is new then make it 1 and if it already present then increse the count++ or 2
+//second we have to iterate the full array this time which element are founded then we make it 1 frequecy
+// trird check again if next time which elemets are founded if it is new then make it 1 and if it already (same) present then increse the count++ or 2
 
 // let arr=[5,3,6,5,3,7]
 // let freCounter={}
@@ -80,7 +80,7 @@
 //we have to find the frequecy from one array to another array in array of element 1 is square of array of 2 elements are same or not
 //here we apply fisrt brute Apporach in this aporach we first check the the both array have same length is avaliable or not
 //if same then check the square of array 1 elements is does present in array of 2 elements
-//but in this aporach in TC is O(n^2)
+//but in this brute aporach in TC is O(n^2)
 //
 // let arr1=[2,3,4,6]
 // let arr2=[36,9,16,4]
@@ -89,7 +89,7 @@
 //         return false
 //     }
 //     for(let i=0;i<arr1.length;i++){
-//         // console.log(i)//this is for for loop iteration one by one 
+        // console.log(i)//this is for for loop iteration one by one 
 //         let correctIndex=arr2.indexOf(arr1[i]**2) //this line check where is square element index is present in arr2 of arr1 element
 //         console.log(correctIndex)//this is for index of square element
 //         if(correctIndex ==-1){
@@ -121,7 +121,7 @@
 //         freqCounter2[val]=(freqCounter2[val]||0)+1
 //     }
 //     for(let key in freqCounter1){
-//         // console.log(key)
+        // console.log(key)
 //         if(!(key**2 in freqCounter2)){
 //             return false
 //         }
@@ -133,7 +133,7 @@
 // }
 // console.log(same(arr1,arr2))
 //here is Time Complexity is O(n) //taking for loop for itrate elements
-//here is Space Complexity is O(2n) =O(n) //takeing frequcounter
+//here is Space Complexity is O(2n) = O(n) //takeing frequcounter
 
 
 

@@ -25,6 +25,7 @@
 //TC-O(n)
 //SC-O(1)
 
+
 // Add  Numbers 1 to 100  in another way
 // function addUptoHundered(n) {
 //   return (n * (n + 1)) / 2;
@@ -33,8 +34,8 @@
 //TC-O(1)
 //SC-O(1)
 
-//todo here we see we got two appoaches and both are different but how we know which one is better or efficent because it also depends 
-//todo if i am running on different diffrent machine so that Time & Space Complexity come itno picture for choose which approach is better or efficient.
+//todo here we see and we got two appoaches and both are different but how we know which one is better or efficent because it also depends 
+//todo if i am running on different diffrent machine so may be it will take diffrent time and space so that Time & Space Complexity come itno picture for choose which approach is better or efficient.
 //todo and now it is independent of machine and input.
 
 
@@ -47,17 +48,17 @@
 
 // function printUpandDown(n){
 //     console.log("Going Up");
-//     for(let i=0;i<=n;i++){
+//     for(let i=1;i<=n;i++){
 //         console.log(i);
 //     }
 //     console.log("At the top!\nGoing Down");
-//     for(let j=n-1;j>=0;j--){
+//     for(let j=n;j>=1;j--){
 //         console.log(j);
 //     }
 //     console.log("Back Down Bye");
 // }
 // console.log(printUpandDown(10));
-//TC-O(n)  => O(n) + O(n) = O(2n) =>O(n) //single loop are addition
+//TC-O(n)  => O(n) + O(n) = O(2n) =>O(n) //single loop are addition and here 2 is constant so it will ignored
 //SC-O(1)
 
 
@@ -72,7 +73,7 @@
 //     }
 // }
 // console.log(PrintAllPair(5));
-//TC-O(n^2)  =>O(n) * O(n) = O(n^2) =>O(n^2) //nested loop are multiply
+//TC-O(n^2)  =>O(n) * O(n) = O(n^2) =>O(n^2) //nested loop are multiply and here is square that is Larger term so it not ignored
 //SC=O(1)
 
 
@@ -83,6 +84,7 @@
 //     let count=0;
 //     while(n>1){
 //         n=n/2
+//         console.log(n);
 //         count++
 //     }
 //     return count
@@ -122,21 +124,21 @@
 
 
 
-let A="hello"
-let B="java"
-function StringUpperCase(A,B){
-    let TotalLength=A.length+B.length
-    let LexComparison;
-    if(A.localeCompare(B)> 0 ){
-        LexComparison="Yes"
-    }else{
-        LexComparison="No"
-    }
+// let A="hello"
+// let B="java"
+// function StringUpperCase(A,B){
+//     let TotalLength=A.length+B.length
+//     let LexComparison;
+//     if(A.localeCompare(B)> 0 ){
+//         LexComparison="Yes"
+//     }else{
+//         LexComparison="No"
+//     }
        
-    let FirstStr=A.substr(0,1).toUpperCase()+A.substr(1)
-    let SecondStr=B.substr(0,1).toUpperCase()+B.substr(1)
-    console.log(TotalLength);
-    console.log(LexComparison);
-    console.log(FirstStr+" "+SecondStr)
-}
-console.log(StringUpperCase(A,B));
+//     let FirstStr=A.substr(0,1).toUpperCase()+A.substr(1)
+//     let SecondStr=B.substr(0,1).toUpperCase()+B.substr(1)
+//     console.log(TotalLength);
+//     console.log(LexComparison);
+//     console.log(FirstStr+" "+SecondStr)
+// }
+// console.log(StringUpperCase(A,B));

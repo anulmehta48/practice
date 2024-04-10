@@ -28,20 +28,20 @@
 
 //Q3 write a program to Reverse the array without using third array like =[1,2,3] =>[3,2,1]
 // Ans:- this is very most asked question in the every interviews ****
-let arr=[12,20,26,24,41,36,21]
-function swapNumber(arr){
-    let i=0;
-    let j=arr.length-1;
-    while(i<j){
-        arr[i]=arr[i]+arr[j]
-        arr[j]=arr[i]-arr[j]
-        arr[i]=arr[i]-arr[j]
-        i++;
-        j--;  
-    }
-    return arr
-}
-console.log(swapNumber(arr))
+// let arr=[12,20,26,24,41,36,21]
+// function swapNumber(arr){
+//     let i=0;
+//     let j=arr.length-1;
+//     while(i<j){
+//         arr[i]=arr[i]+arr[j]
+//         arr[j]=arr[i]-arr[j]
+//         arr[i]=arr[i]-arr[j]
+//         i++;
+//         j--;  
+//     }
+//     return arr
+// }
+// console.log(swapNumber(arr))
 
 
 //Q4 Wite a JS program to cyclically rotate the an array -rotate(arr,d) that rotates by d elements:
