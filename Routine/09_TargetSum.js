@@ -1,3 +1,4 @@
+//using map when array is not sorted order
 //find the unique all the possibal pair of element (inside an array) whose sum is equal to the target
 let arr=[7,2,4,6,9,11,34,3,2,1];
 let target=5;

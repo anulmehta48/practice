@@ -1,4 +1,5 @@
 //*class 
+//
 //class keyword is just syenthetical sugar in javascript it is just like Prototype adding methods outside of constructor function that it. 
 // in the class we cretated method inside of class itself but ouside of cunstructor functions.
 

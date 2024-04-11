@@ -1,3 +1,4 @@
+//using two pointer appoaches when array in sorted order
 let arr=[10,22,28,29,30,40]
 let x=54
 

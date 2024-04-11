@@ -7,7 +7,8 @@
 */
 
 //* constructor function;
-//costructor function is just like normal function but with some extra functionality or we can say it is a class
+//A constructor function in JavaScript is a special type of function used to create and initialize objects created within that function.
+//costructor function is just like normal function but with some extra functionality or we can say it is a class 
 function BankAccount(customerName,balance=0) {
     //these variables are called properties 
     this.customerName=customerName;
