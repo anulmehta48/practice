@@ -134,3 +134,6 @@ function printprime(n){
    }
    console.log(printprime(16))
 
+
+
+  //  /
